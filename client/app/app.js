@@ -1,11 +1,14 @@
-(function moduleAppJS () {
-  'use strict';
+'use strict';
 
-  angular.module('temichApp', [
-    'ngRoute',
-    'ngCookies',
-    'ui.bootstrap',
-    'angularSpinner'
-  ]);
+angular.module('tApp', [
+  'ngCookies',
+  'ngResource',
+  'ngSanitize',
+  'ui.router'
+])
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $urlRouterProvider
+      .otherwise('/');
 
-})();
+    $locationProvider.html5Mode(true);
+  });
