@@ -2,8 +2,13 @@ import { Component } from '@angular/core';
 
 import { AppState } from '../../_services/state/app-state.service';
 
+import { RouterActive } from '../../_directives/router-active';
+
 @Component({
   selector: 'top',
+  directives: [
+    RouterActive
+  ],
   styleUrls: [
     'app/_components/top/top.scss'
   ],
