@@ -9,6 +9,7 @@ const helpers = require('./helpers');
  */
 const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
+const autoprefixer = require('autoprefixer');
 
 /**
  * Webpack Constants
@@ -143,7 +144,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'raw-loader!style-loader!css-loader!postcss!sass-loader',
+        loaders: ['raw-loader', 'style', 'css', 'resolve-url', 'postcss', 'sass'],
         exclude: [helpers.root('src/index.html')]
       },
 
@@ -209,6 +210,14 @@ module.exports = {
       }
     }),
 
+    new ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery',
+      'Tether': 'tether',
+      'window.Tether': 'tether'
+    })
+
 
   ],
 
@@ -237,6 +246,8 @@ module.exports = {
     module: false,
     clearImmediate: false,
     setImmediate: false
-  }
+  },
+
+  postcss: [autoprefixer]
 
 };
