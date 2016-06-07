@@ -20,7 +20,7 @@ import { Top } from './_components/top';
   directives: [
     Top
   ],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.None,
   styleUrls: ['app/app.scss'],
   template: require('./app.html')
 })
