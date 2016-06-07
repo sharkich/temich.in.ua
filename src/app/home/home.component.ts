@@ -1,32 +1,29 @@
 import { Component } from '@angular/core';
 
-import { AppState } from '../app.service';
-import { Title } from './title';
-import { XLarge } from './x-large';
+import { AppState } from '../_services/state/app-state.service';
 
 @Component({
-  selector: 'home',  // <home></home>
-  providers: [
-    Title
-  ],
+  selector: 'home',
+  providers: [],
   directives: [],
-  pipes: [ ],
+  pipes: [],
   styleUrls: [
-    'app/home/home1.scss'
+    'app/home/home.scss'
   ],
   template: require('./home.html')
 })
 export class Home {
 
-  localState = { value: '' };
+  localState = {
+    value: ''
+  };
 
-  constructor(public appState: AppState, public title: Title) {
+  constructor(public appState: AppState) {
 
   }
 
   ngOnInit() {
     console.log('hello `Home` component');
-    // this.title.getData().subscribe(data => this.data = data);
   }
 
   submitState(value) {

@@ -46,7 +46,7 @@
     "e2e": "npm run protractor",
     "e2e:live": "npm run e2e -- --elementExplorer",
     "pretest": "npm run lint",
-    "test": "karma start",
+    "test": "npm run watch:test",
     "ci": "npm test && npm run e2e",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
     "start": "npm run server:dev",
