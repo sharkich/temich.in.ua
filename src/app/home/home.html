@@ -8,6 +8,10 @@
 
   <hr>
 
+  <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+
+  <hr>
+
   <div>
     For hot module reloading run
     <pre>npm run start:hmr</pre>
@@ -36,40 +40,15 @@
 
   </div>
 
-  <h1 class="sample-content">Your Content Here</h1>
+  <h2>One framework.</h2>
+  <h3>Mobile and desktop.</h3>
 
-  <div>
-    For material design components use the <a href="https://github.com/AngularClass/angular2-webpack-starter/tree/material2"><b>material2</b></a> branch
-  </div>
+  <h3>Develop Across All Platforms</h3>
+  <p>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.</p>
 
-  <hr>
+  <h2>Speed & Performance</h2>
+  <p>Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.</p>
+  <p>Angular puts you in control over scalability. Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model.</p>
 
-  <div>
-    For hot module reloading run
-    <pre>npm run start:hmr</pre>
-  </div>
-
-  <hr>
-
-  <div>
-    <h4>Local State</h4>
-
-    <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
-
-      <input placeholder="Submit Local State to App State" [value]="localState.value" (input)="localState.value = $event.target.value"
-             autofocus>
-
-      <button type="submit" class="btn btn-primary">Submit Value</button>
-    </form>
-    <!--
-        <input type="text" [value]="localState.value" (input)="localState.value = $event.target.value" autofocus>
-        Rather than wiring up two-way data-binding ourselves with [value] and (input)
-        we can use Angular's [(ngModel)] syntax
-        <input type="text" [(ngModel)]="localState.value" autofocus>
-      -->
-
-    <pre>this.localState = {{ localState | json }}</pre>
-
-  </div>
 
 </div>

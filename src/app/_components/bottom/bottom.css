@@ -1,3 +1,15 @@
 .bottom {
-  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 5px 0 0 5px;
+}
+
+.command-line {
+  width: 100%;
+  height: 70px;
+  font-size: 16pt;
+  background: inherit;
+  color: #fff;
+}
+
+.ok-button {
+  margin-top: 15px;
 }

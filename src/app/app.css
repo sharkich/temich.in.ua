@@ -31,3 +31,11 @@ body {
 .app__bottom {
   flex: 1;
 }
+
+
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px dashed #666;
+  color: #666;
+}
