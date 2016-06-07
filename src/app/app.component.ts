@@ -26,9 +26,43 @@ import { Bottom } from './_components/bottom';
   template: require('./app.html')
 })
 @RouteConfig([
-  { path: '/',      name: 'Home', component: Home, useAsDefault: true },
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+    useAsDefault: true
+  },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') }
+  {
+    path: '/about',
+    name: 'About',
+    loader: () => require('es6-promise!./about')('About')
+  },
+  {
+    path: '/cv',
+    name: 'CV',
+    loader: () => require('es6-promise!./cv')('CV')
+  },
+  {
+    path: '/contacts',
+    name: 'Contacts',
+    loader: () => require('es6-promise!./contacts')('Contacts')
+  },
+  {
+    path: '/logs',
+    name: 'Logs',
+    loader: () => require('es6-promise!./logs')('Logs')
+  },
+  {
+    path: '/c',
+    name: 'Clear',
+    loader: () => require('es6-promise!./c')('Clear')
+  },
+  {
+    path: '/help',
+    name: 'Help',
+    loader: () => require('es6-promise!./help')('Help')
+  }
 ])
 export class App {
 

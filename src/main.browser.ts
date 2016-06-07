@@ -9,6 +9,8 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
 import { DIRECTIVES, PIPES, PROVIDERS } from './platform/browser';
 import { ENV_PROVIDERS } from './platform/environment';
 
+import { HTTP_PROVIDERS } from '@angular/http';
+
 /*
 * App Component
 * our top level component that holds all of our components
@@ -26,7 +28,8 @@ export function main(initialHmrState?: any): Promise<any> {
     ...ENV_PROVIDERS,
     ...DIRECTIVES,
     ...PIPES,
-    ...APP_PROVIDERS
+    ...APP_PROVIDERS,
+    ...HTTP_PROVIDERS
   ])
   .catch(err => console.error(err));
 

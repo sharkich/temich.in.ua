@@ -1,7 +1,7 @@
 # @AngularClass
 
 # Logs
-logs
+/logs
 *.log
 
 # Runtime data
