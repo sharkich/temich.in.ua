@@ -1,0 +1,9 @@
+body {
+  font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
+  background: #292c36;
+  color: white;
+  min-width: 288px;
+}
+
+.app {
+}

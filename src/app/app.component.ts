@@ -21,7 +21,8 @@ import { Top } from './_components/top';
     Top
   ],
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['app/app.scss'],
+  styles: [require('./app.css')],
+  // styleUrls: ['app/app.scss'],
   template: require('./app.html')
 })
 @RouteConfig([

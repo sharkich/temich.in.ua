@@ -9,9 +9,8 @@ import { RouterActive } from '../../_directives/router-active';
   directives: [
     RouterActive
   ],
-  styleUrls: [
-    'app/_components/top/top.scss'
-  ],
+  styles: [require('./top.css')],
+  // styleUrls: ['app/_components/top/top.scss'],
   template: require('./top.html')
 })
 export class Top {
