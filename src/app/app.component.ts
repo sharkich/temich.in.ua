@@ -8,6 +8,7 @@ import { AppState } from './_services/state/app-state.service';
 import { Home } from './home';
 
 import { Top } from './_components/top';
+import { Bottom } from './_components/bottom';
 
 /*
  * App Component
@@ -17,9 +18,7 @@ import { Top } from './_components/top';
   selector: 'app',
   pipes: [ ],
   providers: [ ],
-  directives: [
-    Top
-  ],
+  directives: [Top, Bottom],
   encapsulation: ViewEncapsulation.None,
   styles: [require('./app.css')],
   // styleUrls: ['app/app.scss'],

@@ -1,3 +1,9 @@
+html, body {
+  margin:0;
+  height:100%;
+  min-height:100%;
+}
+
 body {
   font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
   background: #292c36;
@@ -6,4 +12,22 @@ body {
 }
 
 .app {
+  display: flex;
+  min-height: 100vh;
+  maxn-height: 100vh;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.app__top {
+  flex: 1;
+}
+
+.app__main {
+  flex: 8;
+  overflow-y: scroll;
+}
+
+.app__bottom {
+  flex: 1;
 }
