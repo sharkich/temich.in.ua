@@ -39,3 +39,7 @@ pre {
   border: 1px dashed #666;
   color: #666;
 }
+
+.grey, .gray {
+  color: #666;
+}

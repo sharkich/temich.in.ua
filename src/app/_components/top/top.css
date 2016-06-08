@@ -5,3 +5,10 @@
 .navbar {
   background-color: #292c36;
 }
+
+
+.ua {
+  background: -webkit-linear-gradient(yellow, dodgerblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
