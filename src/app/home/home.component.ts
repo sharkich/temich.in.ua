@@ -19,7 +19,6 @@ export class Home {
   };
 
   constructor(public appState: AppState) {
-
   }
 
   ngOnInit() {
