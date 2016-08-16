@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  temich -- owner -- https://twitter.com/temich_in_ua
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, ES2015

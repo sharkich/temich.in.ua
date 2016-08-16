@@ -1,0 +1,14 @@
+#content {}
+
+#content > .main {
+  padding: 1em;
+}
+
+.main__header__h1 {
+  color: #fff;
+  text-shadow: 1px 4px 6px #292c36, 0 0 0 #000, 1px 4px 6px #292c36;
+}
+
+.main__header__about {
+  color: #666;
+}

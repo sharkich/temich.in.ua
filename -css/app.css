@@ -1,0 +1,35 @@
+/*
+  Predefine tags
+*/
+
+html, body {
+  margin:0;
+  height:100%;
+  min-height:100%;
+}
+
+body {
+  font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
+  background: #292c36;
+  color: white;
+  min-width: 288px;
+}
+
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px dashed #666;
+  color: #666;
+}
+
+/*
+  General classes
+*/
+
+.c {
+  clear: both;
+}
+
+.grey, .gray {
+  color: #666;
+}
