@@ -1,0 +1,49 @@
+#cv .section {
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#cv .exp {
+  margin-bottom: 1em;
+  margin-left: 2em;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+#cv .exp:last-child {
+  border-bottom: none;
+}
+
+#cv .exp__header__index {
+  float: left;
+  color: #666;
+  margin-right: 4px;
+  padding-top: 2px;
+}
+
+#cv .exp__header__h3 {
+  float: left;
+  color: #666;
+  margin: 0 8px 0 0;
+  padding: 0;
+}
+
+#cv .exp__title {
+  color: #fff;
+}
+
+#cv .exp__company {
+  color: #eee;
+}
+
+#cv .exp__header__info {
+  float: left;
+  font-size: 80%;
+  margin: 0;
+  padding: 5px 0 0 0;
+  color: #666;
+}
+
+#cv .exp__content {
+  border-left: 1px solid #666;
+  margin-left: 4px;
+  padding-left: 18px;
+}
