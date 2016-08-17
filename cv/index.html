@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Contacts by Artem Koziar</title>
-  <meta name="description" content="Contacts by Artem Koziar: email, phone, social links etc">
+  <title>CV by Artem Koziar: Senior JavaScript Developer, Resume Front-end Engineer</title>
+  <meta name="description" content="CV (Resume) by Artem Koziar">
 
   <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="../-css/app.css">
@@ -53,10 +53,15 @@
 
     <header class="main__header">
       <h1 class="main__header__h1">CV</h1>
-      <p class="main__header__about">CV by front-end programmer Artem Koziar</p>
+      <p class="main__header__about">Resume by Artem Koziar: Senior JavaScript Developer, Front-end Engineer</p>
+      <blockquote>
+          <strong>Date of Birth:</strong> September 26, 1984 <span class="grey" id="year-old"></span><br>
+          <strong>Marital status:</strong> married, two daughters<br>
+          <strong>Phone:</strong> +38-067-731-76-48<br>
+          <strong>Email:</strong> a@temich.in.ua<br>
+          <strong>Skype:</strong> lsharkichl
+      </blockquote>
     </header>
-
-    <p>Coming soon.</p>
 
   </main>
 
@@ -69,6 +74,10 @@
   </div>
 </footer>
 
+<script src="../node_modules/moment/min/moment.min.js"></script>
+<script>
+  document.getElementById('year-old').innerHTML = `(${moment([1984, 8, 26]).fromNow()})`;
+</script>
 <!-- Google Analytics -->
 <script>
   (function (i, s, o, g, r, a, m) {
