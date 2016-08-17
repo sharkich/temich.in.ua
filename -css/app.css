@@ -11,7 +11,7 @@ html, body {
 body {
   font-family: Menlo, Monaco, 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
   background: #292c36;
-  color: white;
+  color: #eee;
   min-width: 288px;
 }
 
