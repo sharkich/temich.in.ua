@@ -6,6 +6,8 @@
   margin-bottom: 1em;
   margin-left: 2em;
   border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+  background-position: top right;
+  background-repeat:no-repeat;
 }
 
 #cv .exp:last-child {
@@ -46,4 +48,8 @@
   border-left: 1px solid #666;
   margin-left: 4px;
   padding-left: 18px;
+}
+
+#cv .exp__header__img {
+  float: right;
 }
