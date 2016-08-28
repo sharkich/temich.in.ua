@@ -10,7 +10,7 @@
   ];
   let avatarsList = [];
 
-  const PATH = './-i/avatars/';
+  const PATH = '/-i/avatars/';
   const ID = 'avatar';
   const $AVATAR = document.getElementById(ID);
   const DEFAULT = $AVATAR.getAttribute('src');
