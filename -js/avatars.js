@@ -10,11 +10,10 @@
   ];
   let avatarsList = [];
 
-  const PATH = '/-i/avatars/';
-
+  const PATH = './-i/avatars/';
   const ID = 'avatar';
-
   const $AVATAR = document.getElementById(ID);
+  const DEFAULT = $AVATAR.getAttribute('src');
 
   if (!$AVATAR) {
     return;
@@ -48,9 +47,17 @@
       avatarsList.splice(index, 1);
       $AVATAR.setAttribute('src', PATH + newImg);
       loading = false;
-    }, DELAY)
+    }, DELAY);
   };
 
   $AVATAR.addEventListener('mousemove', changeImg);
+  $AVATAR.addEventListener('mouseleave', () => {
+    loading = true;
+    setTimeout(() => {
+      $AVATAR.setAttribute('src', DEFAULT);
+      loading = false;
+    }, DELAY);
+
+  });
 
 })();
