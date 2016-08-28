@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>temich</title>
-  <meta name="description" content="Artem Koziar's personal site. Shortcut: #me, #www, #javascript, #angular, #react, #nodejs, #html, #css">
+  <meta name="description"
+        content="Artem Koziar's personal site. Shortcut: #me, #www, #javascript, #angular, #react, #nodejs, #html, #css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
-  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./-css/normalize.css">
   <link rel="stylesheet" href="./-css/app.css">
   <link rel="stylesheet" href="./-css/content.css">
   <link rel="stylesheet" href="./-css/top.css">
@@ -57,9 +58,18 @@
   <main role="main" class="main">
 
     <header class="main__header">
-      <img src="./-i/avatars/wc.jpg" width="225" height="225" alt="Artem Koziar [temich]" align="right" class="avatar">
+      <img
+        src="./-i/avatars/wc.jpg"
+        width="225"
+        height="225"
+        alt="Artem Koziar [temich]"
+        align="right"
+        class="avatar"
+        id="avatar"
+      >
       <h1 class="main__header__h1"><span class="main__header__h1__name">Artem Koziar</span>'s personal site</h1>
-      <p class="main__header__about">Shortcut: #programming, #www, #javascript, #angular, #react, #nodejs, #html, #css</p>
+      <p class="main__header__about">Shortcut: #programming, #www, #javascript, #angular, #react, #nodejs, #html,
+        #css</p>
     </header>
 
     <article class="article">
@@ -84,6 +94,8 @@
     &copy; Artem Koziar
   </div>
 </footer>
+
+<script src="./-js/avatars.js"></script>
 
 <!-- Google Analytics -->
 <script>
