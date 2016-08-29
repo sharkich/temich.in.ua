@@ -31,7 +31,7 @@
   };
 
   let loading = false;
-  const DELAY = 100;
+  const DELAY = 1;
 
   const changeImg = () => {
     if (loading) {
