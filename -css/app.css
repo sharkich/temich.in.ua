@@ -35,6 +35,14 @@ a {
   clear: both;
 }
 
+.cr {
+  clear: right;
+}
+
+.cl {
+  clear: left;
+}
+
 .grey, .gray {
   color: #666;
 }
