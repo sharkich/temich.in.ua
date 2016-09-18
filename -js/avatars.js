@@ -6,7 +6,8 @@
     'shadow.jpg',
     'smoking.jpg',
     'wc.jpg',
-    'we-win.jpg'
+    'we-win.jpg',
+    'ok.jpg'
   ];
   let avatarsList = [];
 
