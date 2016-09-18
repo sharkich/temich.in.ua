@@ -1,9 +1,9 @@
 const CACHE_NAME = 'temich-ws';
 const FILES_TO_CACHE = [
-  '/',
-  '/cv',
-  '/about',
-  '/contacts',
+  // '/',
+  // '/cv',
+  // '/about',
+  // '/contacts',
 
   '/-i/favicon.png',
 
