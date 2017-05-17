@@ -1,0 +1,28 @@
+{
+  "name": "temich.in.ua",
+  "version": "1.0.0",
+  "description": "Personal site by Artem Koziar",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temich666/temich.in.ua.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Artem Koziar <a@temich.in.ua>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/temich666/temich.in.ua/issues"
+  },
+  "homepage": "https://github.com/temich666/temich.in.ua#readme",
+  "dependencies": {
+    "moment": "^2.14.1",
+    "normalize.css": "^4.2.0"
+  }
+}
