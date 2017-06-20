@@ -81,3 +81,14 @@
   color: #999;
   font-size: 70%;
 }
+
+/** MAIN **/
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+}
