@@ -1,21 +1,69 @@
 @import '../../src/styles/variables';
 
-nav {
-  margin-top: 16px;
+.t-header {
+  position: relative;
+
+  &__top {
+    font-family: 'WeberHandITCStd';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+
+    &__logo {
+      position: absolute;
+      z-index: -1;
+      top: 12px;
+      right: calc(50% - 21px);
+
+      &__img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    background: #505050;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    a {
+      padding: 4px 24px;
+    }
+
+    a, a:link, a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    a.active {
+      background: #fff;
+      color: #000;
+    }
+    a:hover {
+      color: #000;
+      background: #eee;
+    }
+  }
 }
 
-nav a {
-  background-color: $nav-button-color;
-  color: white;
-  padding: 8px 16px;
-  margin: 8px;
-  vertical-align: middle;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
+.t-main {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'WeberHandITCStd';
+  }
 }
 
-a.active {
-  background-color: red;
+.t-footer {
+  margin-top: 32px;
+  padding: 32px 0;
+  border-top: 1px solid $border-color;
+
+  &__copyright {
+    font-family: 'WeberHandITCStd';
+    text-align: center;
+  }
 }
