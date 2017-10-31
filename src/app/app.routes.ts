@@ -4,6 +4,7 @@ import {HomeComponent} from './home/home.component';
 import {FamilyComponent} from './family/family.component';
 import {LogComponent} from './log/log.component';
 import {CvComponent} from './cv/cv.component';
+import {ResumeComponent} from './resume/resume.component';
 import {ContactsComponent} from './contacts/contacts.component';
 
 export const APP_ROUTES: Routes = [
@@ -22,6 +23,10 @@ export const APP_ROUTES: Routes = [
   {
     path: 'cv',
     component: CvComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
   },
   {
     path: 'contacts',
