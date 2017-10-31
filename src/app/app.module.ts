@@ -1,16 +1,35 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {HomeComponent} from './home/home.component';
+import {FamilyComponent} from './family/family.component';
+import {LogComponent} from './log/log.component';
+import {CvComponent} from './cv/cv.component';
+import {ContactsComponent} from './contacts/contacts.component';
+
+import {APP_ROUTES} from './app.routes';
+import { HeaderComponent } from './!components/header/header.component';
+import { FooterComponent } from './!components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    FamilyComponent,
+    LogComponent,
+    CvComponent,
+    ContactsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(APP_ROUTES),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
