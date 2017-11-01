@@ -13,6 +13,7 @@ import {APP_ROUTES} from './app.routes';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
+import { Http404Component } from './components/http404/http404.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ResumeComponent } from './resume/resume.component';
     ContactsComponent,
     HeaderComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    Http404Component
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import {LogComponent} from './log/log.component';
 import {CvComponent} from './cv/cv.component';
 import {ResumeComponent} from './resume/resume.component';
 import {ContactsComponent} from './contacts/contacts.component';
+import {Http404Component} from './components/http404/http404.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -31,5 +32,9 @@ export const APP_ROUTES: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent
+  },
+  {
+    path: '**',
+    component: Http404Component
   }
 ];
