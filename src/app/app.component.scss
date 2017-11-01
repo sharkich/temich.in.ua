@@ -1,6 +1,9 @@
 @import '../styles';
 
 .t-main {
+  margin: 140px auto 0 auto;
+  max-width: 1024px;
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'WeberHandITCStd';
   }
@@ -32,7 +35,7 @@
   }
 
   .t-article {
-    margin: 16px;
+    margin: 16px 0;
     padding: 8px;
     border: 1px solid $border-color;
     border-radius: 3px;
