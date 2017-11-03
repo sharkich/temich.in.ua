@@ -29,6 +29,7 @@
       .loader {
         display: block;
         position: absolute;
+        right: calc(50% - 21px);
         z-index: 100;
         content: '';
         border: 2px solid #f3f3f3; /* Light grey */
