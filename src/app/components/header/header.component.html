@@ -1,7 +1,10 @@
 <header class="t-header">
-  <section class="t-header__top">
-    <h3>temich</h3>
-    <div class="t-header__top__logo">
+
+  <div class="t-header__wrapper">
+
+    <h3 class="t-header__el" id="t-header__temich">temich</h3>
+
+    <div class="t-header__el t-header__logo" id="t-header__logo">
       <div class="loader"></div>
       <img
         [src]="avatarSRC"
@@ -10,9 +13,9 @@
         height="42"
         alt="Artem Koziar">
     </div>
-    <h2>Artem Koziar</h2>
-  </section>
-  <nav>
+
+    <h2 class="t-header__el" id="t-header__artko">Artem Koziar</h2>
+
     <menu class="t-header__menu">
       <li>
         <a
@@ -70,5 +73,8 @@
         </a>
       </li>
     </menu>
-  </nav>
+
+  </div>
+
+
 </header>
