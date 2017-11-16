@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-prod": "ng build --prod --output-path dist --base-href http:/temich.in.ua/",
+    "build-prod": "ng build --prod --output-path dist --base-href http://temich.in.ua/",
     "publish": "ngh",
     "test": "ng test",
     "lint": "ng lint",
