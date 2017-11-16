@@ -1,77 +1,13 @@
 <h1>Log activities</h1>
 
-<section class="logs">
+<section class="t-logs">
 
-  <article class="t-article">
-    <h2>VR People Public Party<span class="grey small">, July 2017</span></h2>
-    <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-bg-1.jpg" width="600" height="338" alt="VR People Public Party"></p>
-    <p>We did it!</p>
-    <p>We've released <a href="http://www.kantarretail.com/virtual-reality/">VR Infinity 2.0</a>! And more. We've presented it in <a href="https://www.facebook.com/events/1358829717546320/">VR People Public Party</a>.</p>
-    <p>This was a great experience. And we want more)</p>
-    <p>Viva <a href="https://www.facebook.com/groups/vr.people/">VR.People</a>!</p>
-    <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-1.jpg" width="600" height="400" alt="VR People Public Party"></p>
-    <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-2.jpg" width="600" height="400" alt="VR People Public Party"></p>
-    <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-3.jpg" width="600" height="400" alt="VR People Public Party"></p>
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/D6ecTSb7z-E" frameborder="0" allowfullscreen></iframe></p>
-    <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-bg-2.jpg" width="600" height="187" alt="VR People Public Party"></p>
-  </article>
-
-  <article class="t-article">
-    <h2>Public People<span class="grey small">, May 2017</span></h2>
-    <p>Great intense workout about public speaking. Thanks a lot, Roman Lyakh!</p>
-    <p><img src="/assets/img/public-people-2017.jpg" width="600" height="400" alt="Public People"></p>
-    <p><a href="http://www.public-people.com.ua/">PublicPeople</a>, <a href="https://www.facebook.com/Lyakh.Roman">Roman Lyakh</a>, Facebook closed group <a href="https://www.facebook.com/groups/1845162579080300/">Public People May</a></p>
-  </article>
-
-  <article class="t-article">
-    <h2>VR People Weekend<span class="grey small">, May 2017</span></h2>
-    <p>The value of a product is the sum of Clients' problems it solves. When team wants to bring more value to the Clients it meets on weekend to take extra user feedback into release scope. #vrpeople #vrinfinity #kantarretail</p>
-    <p><img src="/assets/img/vr-people-weekend-2017-05-27.jpg" width="600" height="600" alt="VR People"></p>
-    <p>&copy; <a href="https://www.instagram.com/vr.people/">vr.people</a></p>
-  </article>
-
-  <article class="t-article">
-    <h2>My workplace<span class="grey small">, April 2017</span></h2>
-    <p>Only the people who take learning, growth and skills development into their own hands will be tomorrow's leaders.
-      <br>🏆😁 #vrinfinity #vrpeople #kyiv #ukraine #krvr #vr #vrinfinity #kantar #kantarretail #kantarretailvirtualreality #greatpeople #development #selfdevelopment #learning #growth #kyiv #ukraine</p>
-    <p><img src="/assets/img/vr-people-workplace-2017-04-14.jpg" width="600" height="445" alt="workplace"></p>
-    <p>&copy; <a href="https://www.instagram.com/vr.people/">vr.people</a></p>
-  </article>
-
-  <article class="t-article">
-    <h2>t-json-viewer<span class="grey small">, December 2016</span></h2>
-    <p>Angular 2 component for objects debug. Collapsible JSON in HTML with syntax highlight like Chrome DevTools.</p>
-    <p><a href="/t-json-viewer/"><img src="/assets/img/t-json-viewer.png" width="582" height="473" alt="Public People"></a></p>
-    <p>
-      Example: <a href="http://temich.in.ua/t-json-viewer/">temich.in.ua/t-json-viewer</a><br>
-      Github: <a href="https://github.com/temich666/t-json-viewer">github.com/temich666/t-json-viewer</a><br>
-      NPM Package: <a href="https://www.npmjs.com/package/t-json-viewer">npmjs.com/package/t-json-viewer</a>
-    </p>
-  </article>
-
-  <article class="t-article">
-    <h2>Branching Strategy<span class="grey small">, October 2016</span></h2>
-    <p>Presentation about Git Branching Strategy and Git Rebase for Kantar Retail Virtual Reality</p>
-    <p><a href="/assets/img/kantar-git-branching-strategy.pdf">http://temich.in.ua/assets/img/kantar-git-branching-strategy.pdf</a></p>
-  </article>
-
-  <article class="t-article">
-    <h2>Angular 2 Presentation #2<span class="grey small">, October 2016</span></h2>
-    <p>Presentation about new framework and new opportunity for Kantar Retail Virtual Reality</p>
-    <p><a href="/assets/img/angular2-4kantar.pdf">http://temich.in.ua/assets/img/angular2-4kantar.pdf</a></p>
-  </article>
-
-  <article class="t-article">
-    <h2>Angular 2 Presentation<span class="grey small">, September 2016</span></h2>
-    <p>Technical presentation about Angular2 for JavaScript team in Ciklum</p>
-    <p><a href="/assets/img/angular2.pdf">http://temich.in.ua/assets/img/angular2.pdf</a></p>
-  </article>
-
-  <article class="t-article">
-    <h2>GDG DevFest Ukraine 2016<span class="grey small">, September 2016</span></h2>
-    <p>
-      <img src="/assets/img/gdg.jpg" alt="GDC DevFest Ukraine 2016" width="600" height="450">
-    </p>
+  <article
+    class="t-article"
+    [ngClass]="{'t-article--with-content': post.isShowContent}"
+    *ngFor="let post of logs; let index = index;">
+    <h2><a (click)="post.toggleContent()">{{post.title}}<span class="grey small" >, {{post.date}}</span></a></h2>
+    <div class="t-article__content" [innerHTML]="post.content" *ngIf="post.isShowContent"></div>
   </article>
 
 </section>
