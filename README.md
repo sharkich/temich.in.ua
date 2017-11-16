@@ -1,1 +1,0 @@
-# Temich.In.Ua
