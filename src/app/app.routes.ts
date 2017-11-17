@@ -8,6 +8,7 @@ import {ResumeComponent} from './resume/resume.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {Http404Component} from './components/http404/http404.component';
 import {SaveComponent} from './save/save.component';
+import {Save4meComponent} from './save4me/save4me.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -37,6 +38,10 @@ export const APP_ROUTES: Routes = [
   {
     path: 'save',
     component: SaveComponent
+  },
+  {
+    path: 'save4me',
+    component: Save4meComponent
   },
   {
     path: '**',

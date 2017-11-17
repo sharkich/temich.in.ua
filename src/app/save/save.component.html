@@ -1,14 +1,42 @@
 <h1>Save</h1>
 
-<dl>
+<h2>Months</h2>
+<ul class="months">
+  <li *ngFor="let transform of months;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+<hr>
 
-  <dt>28.02.1990</dt>
-  <dd>Zina: уДаВ медаль(яД) ГиРя+РюМка</dd>
+<h2>Numbers 0&mdash;10</h2>
+<ul class="numbers-10">
+  <li *ngFor="let transform of numbers10;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+<hr>
 
-  <dt>22.05.2012</dt>
-  <dd>Arisha: ДиоД голубь(оБои) ДоМ+ГиТара</dd>
+<h2>Numbers 0&mdash;100</h2>
+<ul class="numbers-100">
+  <li *ngFor="let transform of numbers100;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+<hr>
 
-  <dt>26.12.2014</dt>
-  <dd>Nika: ДуШ шампанское(ГиТара) ДоМ+ЖуЧок</dd>
+<h2>Numbers 0&mdash;1000</h2>
+<ul class="numbers-1000">
+  <li *ngFor="let transform of numbers1000;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
 
-</dl>
+<p>Data from site: <a href="http://mnemonikon.ru/members/spr_f.htm">http://mnemonikon.ru/members/spr_f.htm</a></p>
