@@ -1,1 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Temich</title><base href="http://temich.in.ua/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.e72644b22ae718a5236e.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.97f7e34d9930202101c4.bundle.js"></script><script type="text/javascript" src="polyfills.ad37cd45a71cb38eee76.bundle.js"></script><script type="text/javascript" src="main.3799d7b2654fe68ca941.bundle.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Temich</title>
+    <script>
+        (function () {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+    <base href="http://temich.in.ua/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.e72644b22ae718a5236e.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.97f7e34d9930202101c4.bundle.js"></script><script type="text/javascript" src="polyfills.ad37cd45a71cb38eee76.bundle.js"></script><script type="text/javascript" src="main.3799d7b2654fe68ca941.bundle.js"></script></body></html>
