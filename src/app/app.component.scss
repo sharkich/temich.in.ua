@@ -34,4 +34,14 @@
     border-radius: 50%;
   }
 
+
+  dl {
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      margin-bottom: 16px;
+    }
+  }
+
 }

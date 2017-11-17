@@ -14,6 +14,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { Http404Component } from './components/http404/http404.component';
+import { SaveComponent } from './save/save.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Http404Component } from './components/http404/http404.component';
     HeaderComponent,
     FooterComponent,
     ResumeComponent,
-    Http404Component
+    Http404Component,
+    SaveComponent
   ],
   imports: [
     BrowserModule,

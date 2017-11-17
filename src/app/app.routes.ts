@@ -7,6 +7,7 @@ import {CvComponent} from './cv/cv.component';
 import {ResumeComponent} from './resume/resume.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {Http404Component} from './components/http404/http404.component';
+import {SaveComponent} from './save/save.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -32,6 +33,10 @@ export const APP_ROUTES: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent
+  },
+  {
+    path: 'save',
+    component: SaveComponent
   },
   {
     path: '**',
