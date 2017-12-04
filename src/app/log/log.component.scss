@@ -14,13 +14,23 @@
       }
     }
 
-    &--with-content {
-      h2 {
-        margin: 16px 0;
+    &__content {
+      ::ng-deep img {
+        width: 600px;
+        max-width: 100%;
       }
+    }
+
+    &--with-content {
       margin: 16px 0;
       padding: 8px;
       border: 1px solid $border-color;
+
+      h2 {
+        margin: 16px 0;
+      }
     }
+
   }
+
 }

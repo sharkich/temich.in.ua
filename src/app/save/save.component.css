@@ -12,3 +12,7 @@
 .transform {
   color: #eee;
 }
+
+ul {
+  list-style: none;
+}

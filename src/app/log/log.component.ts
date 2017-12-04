@@ -18,16 +18,16 @@ export class LogComponent implements OnInit {
       title: 'VR People Public Party',
       date: 'July 2017',
       content: `
-        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-bg-1.jpg" width="600" height="338" alt="VR People Public Party"></p>
+        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-bg-1.jpg" alt="VR People Public Party" class="img"></p>
         <p>We did it!</p>
         <p>We've released <a href="http://www.kantarretail.com/virtual-reality/">VR Infinity 2.0</a>! And more. We've presented it in <a href="https://www.facebook.com/events/1358829717546320/">VR People Public Party</a>.</p>
         <p>This was a great experience. And we want more)</p>
         <p>Viva <a href="https://www.facebook.com/groups/vr.people/">VR.People</a>!</p>
-        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-1.jpg" width="600" height="400" alt="VR People Public Party"></p>
-        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-2.jpg" width="600" height="400" alt="VR People Public Party"></p>
-        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-3.jpg" width="600" height="400" alt="VR People Public Party"></p>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/D6ecTSb7z-E" frameborder="0" allowfullscreen></iframe></p>
-        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-bg-2.jpg" width="600" height="187" alt="VR People Public Party"></p>
+        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-1.jpg" alt="VR People Public Party"></p>
+        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-2.jpg" alt="VR People Public Party"></p>
+        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-3.jpg" alt="VR People Public Party"></p>
+        <!--<p><iframe width="560" height="315" src="https://www.youtube.com/embed/D6ecTSb7z-E" frameborder="0" allowfullscreen></iframe></p>-->
+        <p><img src="/assets/img/vr.people/party-v2.0/vr-people-party-2.0-bg-2.jpg" alt="VR People Public Party"></p>
     `}));
 
     this.logs.push(new Post({
@@ -35,7 +35,7 @@ export class LogComponent implements OnInit {
       date: 'May 2017',
       content: `
         <p>Great intense workout about public speaking. Thanks a lot, Roman Lyakh!</p>
-        <p><img src="/assets/img/public-people-2017.jpg" width="600" height="400" alt="Public People"></p>
+        <p><img src="/assets/img/public-people-2017.jpg" alt="Public People"></p>
         <p><a href="http://www.public-people.com.ua/">PublicPeople</a>, <a href="https://www.facebook.com/Lyakh.Roman">Roman Lyakh</a>, Facebook closed group <a href="https://www.facebook.com/groups/1845162579080300/">Public People May</a></p>
     `}));
 
@@ -44,7 +44,7 @@ export class LogComponent implements OnInit {
       date: 'May 2017',
       content: `
         <p>The value of a product is the sum of Clients' problems it solves. When team wants to bring more value to the Clients it meets on weekend to take extra user feedback into release scope. #vrpeople #vrinfinity #kantarretail</p>
-        <p><img src="/assets/img/vr-people-weekend-2017-05-27.jpg" width="600" height="600" alt="VR People"></p>
+        <p><img src="/assets/img/vr-people-weekend-2017-05-27.jpg" alt="VR People"></p>
         <p>&copy; <a href="https://www.instagram.com/vr.people/">vr.people</a></p>
     `}));
 
@@ -54,7 +54,7 @@ export class LogComponent implements OnInit {
       content: `
         <p>Only the people who take learning, growth and skills development into their own hands will be tomorrow's leaders.
           <br>🏆😁 #vrinfinity #vrpeople #kyiv #ukraine #krvr #vr #vrinfinity #kantar #kantarretail #kantarretailvirtualreality #greatpeople #development #selfdevelopment #learning #growth #kyiv #ukraine</p>
-        <p><img src="/assets/img/vr-people-workplace-2017-04-14.jpg" width="600" height="445" alt="workplace"></p>
+        <p><img src="/assets/img/vr-people-workplace-2017-04-14.jpg" alt="workplace"></p>
         <p>&copy; <a href="https://www.instagram.com/vr.people/">vr.people</a></p>
     `}));
 
@@ -63,7 +63,7 @@ export class LogComponent implements OnInit {
       date: 'December 2016',
       content: `
         <p>Angular 2 component for objects debug. Collapsible JSON in HTML with syntax highlight like Chrome DevTools.</p>
-        <p><a href="/t-json-viewer/"><img src="/assets/img/t-json-viewer.png" width="582" height="473" alt="Public People"></a></p>
+        <p><a href="/t-json-viewer/"><img src="/assets/img/t-json-viewer.png" alt="Public People"></a></p>
         <p>
           Example: <a href="http://temich.in.ua/t-json-viewer/">temich.in.ua/t-json-viewer</a><br>
           Github: <a href="https://github.com/temich666/t-json-viewer">github.com/temich666/t-json-viewer</a><br>
@@ -100,7 +100,7 @@ export class LogComponent implements OnInit {
       date: 'September 2016',
       content: `
         <p>
-          <img src="/assets/img/gdg.jpg" alt="GDC DevFest Ukraine 2016" width="600" height="450">
+          <img src="/assets/img/gdg.jpg" alt="GDC DevFest Ukraine 2016">
         </p>
     `}));
   }
