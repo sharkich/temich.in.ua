@@ -1,17 +1,16 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  // encapsulation: ViewEncapsulation.Emulated
+  selector: 'home',
+  template: `<h3>{{ message }}</h3>`
 })
 export class HomeComponent implements OnInit {
+  public message: string;
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit() {
+    this.message = 'Hello, World!';
   }
-
 }
