@@ -1,13 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
 import {SeoService} from '../-shared/services/seo.service';
 
 @Component({
     selector: 't-home',
-    template: `
-        <h3>{{ message }}</h3>
-        <p><img src="/i/avatars/hololens.jpg" width="450" height="450" alt="temich"></p>
-    `
+    templateUrl: './home.template.html',
+    styleUrls: ['./home.scss'],
+    styles: [`h3 {background: yellowgreen;}`]
 })
 export class HomeComponent implements OnInit {
     public message: string;
