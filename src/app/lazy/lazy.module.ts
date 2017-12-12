@@ -2,7 +2,7 @@ import {NgModule, Component} from '@angular/core'
 import {RouterModule} from '@angular/router'
 
 @Component({
-  selector: 'lazy-view',
+  selector: 't-lazy-view',
   template: `<h3>i'm lazy</h3>`
 })
 export class LazyComponent {}

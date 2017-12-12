@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-  selector: 'home',
+  selector: 't-home',
   template: `<h3>{{ message }}</h3>`
 })
 export class HomeComponent implements OnInit {
