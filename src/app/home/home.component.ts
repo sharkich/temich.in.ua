@@ -3,7 +3,10 @@ import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 't-home',
-  template: `<h3>{{ message }}</h3>`
+  template: `
+      <h3>{{ message }}</h3>
+      <p><img src="/i/avatars/hololens.jpg" width="450" height="450" alt="temich"></p>
+  `
 })
 export class HomeComponent implements OnInit {
   public message: string;
@@ -13,4 +16,5 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.message = 'Hello, World!';
   }
+
 }
