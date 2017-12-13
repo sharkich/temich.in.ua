@@ -7,7 +7,6 @@ import {SeoService} from '../-shared/services/seo.service';
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-    public message: string;
 
     constructor(private seoService: SeoService) {
     }
@@ -16,7 +15,6 @@ export class HomeComponent implements OnInit {
         this.seoService
             .setTitle('Artem Koziar — Private Site temich.in.ua')
             .setDescription('My Page Description');
-        this.message = 'Hello, World!';
     }
 
 }
