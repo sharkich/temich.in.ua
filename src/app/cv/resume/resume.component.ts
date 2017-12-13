@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SeoService} from '../../-shared/services/seo.service';
 
 @Component({
-    selector: 'app-resume',
+    selector: 't-resume',
     templateUrl: './resume.component.html',
     styleUrls: ['./resume.component.scss']
 })

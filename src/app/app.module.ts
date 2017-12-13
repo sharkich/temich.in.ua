@@ -13,6 +13,8 @@ import {Http404Component} from './-shared/components/http404/http404.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {CvComponent} from './cv/cv.component';
 import {ResumeComponent} from './cv/resume/resume.component';
+import {FamilyComponent} from './family/family.component';
+import {LogComponent} from './log/log.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import {ResumeComponent} from './cv/resume/resume.component';
         ContactsComponent,
         CvComponent,
         ResumeComponent,
+        FamilyComponent,
+        LogComponent,
 
         Http404Component
     ],
