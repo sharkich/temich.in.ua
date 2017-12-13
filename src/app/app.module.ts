@@ -11,6 +11,8 @@ import {HeaderComponent} from './-shared/components/header/header.component';
 import {FooterComponent} from './-shared/components/footer/footer.component';
 import {Http404Component} from './-shared/components/http404/http404.component';
 import {ContactsComponent} from './contacts/contacts.component';
+import {CvComponent} from './cv/cv.component';
+import {ResumeComponent} from './cv/resume/resume.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import {ContactsComponent} from './contacts/contacts.component';
 
         HomeComponent,
         ContactsComponent,
+        CvComponent,
+        ResumeComponent,
 
         Http404Component
     ],
