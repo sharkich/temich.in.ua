@@ -1,0 +1,46 @@
+<!--Мнемоника-->
+<!--Мнемотехники-->
+<!--Цифробуквенный код-->
+<h1>Mnemonics Methodics (russian)</h1>
+<p>Methodics for saving everything</p>
+
+<h2>Months</h2>
+<ul class="months">
+  <li *ngFor="let transform of months;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+<hr>
+
+<h2>Numbers 0&mdash;10</h2>
+<ul class="numbers-10">
+  <li *ngFor="let transform of numbers10;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+<hr>
+
+<h2>Numbers 0&mdash;100</h2>
+<ul class="numbers-100">
+  <li *ngFor="let transform of numbers100;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+<hr>
+
+<h2>Numbers 0&mdash;1000</h2>
+<ul class="numbers-1000">
+  <li *ngFor="let transform of numbers1000;">
+    <span class="source">{{transform.key}}</span>
+    <span class="transform">➡</span>
+    <span class="result">{{transform.value}}</span>
+  </li>
+</ul>
+
+<p>Data from site: <a href="http://mnemonikon.ru/members/spr_f.htm">http://mnemonikon.ru/members/spr_f.htm</a></p>

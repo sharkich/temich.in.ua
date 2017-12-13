@@ -15,6 +15,8 @@ import {CvComponent} from './cv/cv.component';
 import {ResumeComponent} from './cv/resume/resume.component';
 import {FamilyComponent} from './family/family.component';
 import {LogComponent} from './log/log.component';
+import {MemoryComponent} from './memory/memory.component';
+import {Save4meComponent} from './memory/save4me/save4me.component';
 
 
 @NgModule({
@@ -30,6 +32,9 @@ import {LogComponent} from './log/log.component';
         ResumeComponent,
         FamilyComponent,
         LogComponent,
+
+        MemoryComponent,
+        Save4meComponent,
 
         Http404Component
     ],
