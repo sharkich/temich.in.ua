@@ -4,7 +4,7 @@ import {MONTHS} from './months';
 import {NUMBERS_10} from './numbers.10';
 import {NUMBERS_100} from './numbers.100';
 import {NUMBERS_1000} from './numbers.1000';
-import {SeoService} from 'app/-shared/services/seo.service';
+import {SeoService} from '../-shared/services/seo.service';
 
 @Component({
     selector: 't-memory',
