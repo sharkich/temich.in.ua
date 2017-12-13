@@ -1,0 +1,82 @@
+<header class="t-header">
+
+  <div class="t-header__wrapper">
+    <h3 class="t-header__el" id="t-header__temich">temich</h3>
+
+    <div class="t-header__el t-header__logo" id="t-header__logo">
+      <!--<div class="loader"></div>-->
+      <img
+        [src]="avatarSRC"
+        class="avatar"
+        width="42"
+        height="42"
+        alt="Artem Koziar">
+    </div>
+
+    <h2 class="t-header__el" id="t-header__artko">Artem Koziar</h2>
+  </div>
+
+  <div class="t-header__grey">
+    <div class="t-header__wrapper">
+      <menu class="t-header__menu">
+        <li>
+          <a
+            [routerLink]="['/']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            (mouseenter)="onMenuItemHover(AVATARS['/'])"
+            (mouseleave)="onMenuItemOver()">
+            Index
+          </a>
+        </li>
+        <!--<li>-->
+        <!--<a [routerLink]="['/about']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
+        <!--About-->
+        <!--</a>-->
+        <!--</li>-->
+        <li>
+          <a
+            [routerLink]="['/family']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            (mouseenter)="onMenuItemHover(AVATARS['/family'])"
+            (mouseleave)="onMenuItemOver()">
+            Family
+          </a>
+        </li>
+        <li>
+          <a
+            [routerLink]="['/log']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            (mouseenter)="onMenuItemHover(AVATARS['/log'])"
+            (mouseleave)="onMenuItemOver()">
+            Log
+          </a>
+        </li>
+        <li>
+          <a
+            [routerLink]="['/cv']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            (mouseenter)="onMenuItemHover(AVATARS['/cv'])"
+            (mouseleave)="onMenuItemOver()">
+            CV
+          </a>
+        </li>
+        <li>
+          <a
+            [routerLink]="['/contacts']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            (mouseenter)="onMenuItemHover(AVATARS['/contacts'])"
+            (mouseleave)="onMenuItemOver()">
+            Contacts
+          </a>
+        </li>
+      </menu>
+    </div>
+  </div>
+
+
+</header>

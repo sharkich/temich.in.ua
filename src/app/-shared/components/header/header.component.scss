@@ -1,0 +1,112 @@
+@import '../../../../styles';
+
+#t-header__temich {
+  left: 32px;
+}
+
+#t-header__logo {
+  left: 2px;
+
+  .avatar, .loader {
+    width: 22px;
+    height: 22px;
+  }
+  .loader {
+    right: calc(50% - 13px);
+  }
+}
+
+#t-header__artko {
+  right: 2px;
+}
+
+.t-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+
+  &__wrapper {
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    text-align: center;
+
+    .t-header__el {
+      @media screen and (max-width: $mobile-width) {
+        top: 4px;
+      }
+      position: absolute;
+      top: 2px;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      font-family: 'WeberHandITCStd';
+    }
+  }
+
+  &__logo {
+
+    .avatar {
+      border-radius: 50%;
+    }
+
+    .loader {
+      display: block;
+      position: absolute;
+      right: calc(50% - 21px);
+      z-index: 100;
+      content: '';
+      border: 2px solid #f3f3f3; /* Light grey */
+      border-top: 2px solid #3ba0d4; /* Blue */
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+  }
+
+  &__grey {
+    @media screen and (max-width: $mobile-width) {
+      margin-top: $header-inc;
+    }
+
+    background: #505050;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__menu {
+    max-width: 1024px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px 0;
+    margin: 0 auto;
+
+    a {
+      padding: 4px 24px;
+    }
+
+    a, a:link, a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    a.active {
+      background: #fff;
+      color: #000;
+    }
+    a:hover {
+      color: #000;
+      background: #eee;
+    }
+  }
+
+}

@@ -1,11 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
-//@import "app/home/home.scss";
 
-t-app-root {
-    background: yellow;
-    h1 {
-        color: red;
-    }
+$mobile-width: 768px;
+$header-inc: 32px;
+
+$nav-button-color: #00838F;
+
+$border-color: rgba(27, 31, 35, 0.2);
+
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  //font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-$color: green;
+@font-face {
+  font-family: 'WeberHandITCStd';
+  src: url('/i/fonts/WeberHandITCStd.woff2') format('woff2'),
+  url('/i/fonts/WeberHandITCStd.woff') format('woff'),
+  url('/i/fonts/WeberHandITCStd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+t-app-root {
+
+  @media screen and (max-width: $mobile-width) {
+    margin-top: 40px + $header-inc;
+  }
+  @media screen and (min-width: $mobile-width) {
+    margin-top: 50px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  padding: 2px;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'WeberHandITCStd';
+  }
+
+  a {
+    color: #3ba0d4;
+  }
+  a:visited {
+    color: #9e4036;
+  }
+  a:hover {
+    color: #dd423e;
+  }
+
+  .acenter {
+    text-align: center;
+  }
+
+  .small {
+    font-size: 75%;
+  }
+
+  .grey {
+    color: #9f9f9f;
+  }
+
+  .avatar {
+    border-radius: 50%;
+  }
+
+  dl {
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      margin-bottom: 16px;
+    }
+  }
+
+}

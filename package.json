@@ -19,7 +19,7 @@
         "ng": "ng",
         "start": "node ./dist/server.js",
         "postinstall": "npm run build:prerender",
-        "start-old": "ng serve",
+        "serve": "ng serve",
         "build": "ng build",
         "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
         "build:prerender": "npm run build:client-and-server-bundles && npm run webpack:server && npm run generate:prerender",

@@ -4,8 +4,9 @@ import {SeoService} from '../-shared/services/seo.service';
 @Component({
     selector: 't-home',
     templateUrl: './home.template.html',
-    styleUrls: ['./home.scss'],
-    styles: [`h3 {background: yellowgreen;}`]
+    styles: [`
+        h3 {color: green;}
+    `]
 })
 export class HomeComponent implements OnInit {
     public message: string;
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.seoService
-            .setTitle('My Page Title')
+            .setTitle('Artem Koziar — Private Site temich.in.ua')
             .setDescription('My Page Description');
         this.message = 'Hello, World!';
     }
