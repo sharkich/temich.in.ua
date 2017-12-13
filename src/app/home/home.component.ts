@@ -4,9 +4,7 @@ import {SeoService} from '../-shared/services/seo.service';
 @Component({
     selector: 't-home',
     templateUrl: './home.template.html',
-    styles: [`
-        h3 {color: green;}
-    `]
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
     public message: string;

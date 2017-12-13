@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
   public avatarSRC: string = this.AVATARS['/'];
 
   constructor(private router: Router) {
-    console.log(router);
   }
 
   ngOnInit() {

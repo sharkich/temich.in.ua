@@ -62,5 +62,9 @@
         "@angular/compiler-cli": "^5.1.0",
         "codelyzer": "^4.0.2",
         "tslint": "^5.8.0"
+    },
+    "devDependencies": {
+        "ansi-regex": "^3.0.0",
+        "array-union": "^1.0.2"
     }
 }
