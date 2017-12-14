@@ -3,6 +3,7 @@
 .vscode
 morgan.log
 *.old
+*.icloud
 
 # Built #
 /dist/
