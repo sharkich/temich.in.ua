@@ -17,7 +17,10 @@
     ],
     "scripts": {
         "ng": "ng",
+        "TODO:DEVELOPMENT": "echo Development (Client-side only rendering)",
         "start": "node ./dist/server.js",
+        "TODO:PRODUCTION": "echo Production (also for testing SSR/Pre-rendering locally)",
+        "prod": "npm run build:ssr && npm run serve:ssr",
         "postinstall": "npm run build:prerender",
         "serve": "ng serve",
         "build": "ng build",
