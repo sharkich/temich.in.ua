@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+
 import {SeoService} from '../../-shared/services/seo.service';
 
 @Component({
@@ -14,58 +16,74 @@ export class PaceComponent implements OnInit {
     public maxPace: number = 14 * 60;
     public maxTime: number;
 
+    public title: string = 'Running Pace Calculator';
+
     public distances = [
         {
             distance: 1000,
-            title: '1 km'
+            title: '1 km',
+            pageTitle: '1 km Pace Calculator'
         },
         {
             distance: 2000,
-            title: '2 km'
+            title: '2 km',
+            pageTitle: '2 km Pace Calculator'
         },
         {
             distance: 3000,
-            title: '3 km'
+            title: '3 km',
+            pageTitle: '3 km Pace Calculator'
         },
         {
             distance: 5000,
-            title: '5 km'
+            title: '5 km',
+            pageTitle: '5 km Pace Calculator'
         },
         {
             distance: 10000,
-            title: '10 km'
+            title: '10 km',
+            pageTitle: '10 km Pace Calculator'
         },
         {
             distance: 15000,
-            title: '15 km'
+            title: '15 km',
+            pageTitle: '15 km Pace Calculator'
         },
         {
             distance: 21097,
-            title: 'Half (21.097 km)'
+            title: 'Half (21.097 km)',
+            pageTitle: 'Half Marathon Pace Calculator'
         },
         {
             distance: 42195,
-            title: 'Marathon (42.195 km)'
+            title: 'Marathon (42.195 km)',
+            pageTitle: 'Marathon Pace Calculator'
         },
         {
             distance: 50000,
-            title: '50 km'
+            title: '50 km',
+            pageTitle: '50 km Pace Calculator'
         },
         {
             distance: 100000,
-            title: '100 km'
+            title: '100 km',
+            pageTitle: '100 km Pace Calculator'
         }
     ];
 
-    constructor(private seoService: SeoService) {
+    constructor(private seoService: SeoService,
+                private router: Router,
+                private activatedRoute: ActivatedRoute) {
     }
 
     ngOnInit() {
         this.seoService
-            .setTitle('Marathon and Half-Marathon Pace Running Calculator (Pace, Speed, Time)')
+            .setTitle(this.title)
             .setDescription('Calculator of pace, speed, time for any distance');
 
-        this.onSelectDistance(21097);
+        const INIT_DISTANCE = +this.activatedRoute.snapshot.params['pace'] || 21097;
+
+        this.onSelectDistance(INIT_DISTANCE);
         this.onChangePace(this.pace);
     }
 
@@ -73,6 +91,12 @@ export class PaceComponent implements OnInit {
         this.distance = distance;
         this.maxTime = distance * this.maxPace / 1000;
         this.onChangePace(this.pace);
+        const dist = this.distances.find((d) => d.distance === this.distance);
+        if (dist) {
+            this.title = dist.pageTitle;
+        }
+        this.seoService.setTitle(this.title);
+        this.router.navigate(['apps', 'pace', this.distance]);
     }
 
     onChangePace(pace: number) {

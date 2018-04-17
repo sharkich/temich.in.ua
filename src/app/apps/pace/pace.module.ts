@@ -11,7 +11,8 @@ import {PaceComponent} from './pace.component';
         CommonModule,
         FormsModule,
         RouterModule.forChild([
-            { path: '', component: PaceComponent, pathMatch: 'full'}
+            { path: '', component: PaceComponent, pathMatch: 'full'},
+            { path: ':pace', component: PaceComponent}
         ])
     ]
 })
