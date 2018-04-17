@@ -18,6 +18,8 @@ export const ROUTES = [
     {path: 'memory', component: MemoryComponent, pathMatch: 'full'},
     {path: 'memory/save4me', component: Save4meComponent, pathMatch: 'full'},
 
+    {path: 'pace', loadChildren: './apps/pace/pace.module#PaceModule'},
+
     {path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'},
     {path: 'lazy/nested', loadChildren: './lazy/lazy.module#LazyModule'}
 ];
