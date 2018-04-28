@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ng-universal-demo"
+    "name": "temich-in-ua"
   },
   "apps": [
     {
@@ -9,7 +9,8 @@
       "outDir": "dist/browser",
       "assets": [
         "i",
-        "favicon.ico"
+        "favicon.ico",
+        "googleb10f70f36702c0d6.html"
       ],
       "index": "index.html",
       "main": "main.ts",
