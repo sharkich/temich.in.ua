@@ -10,7 +10,8 @@
       "assets": [
         "i",
         "favicon.ico",
-        "googleb10f70f36702c0d6.html"
+        "googleb10f70f36702c0d6.html",
+        "sitemap.xml"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -35,7 +36,8 @@
       "assets": [
         "i",
         "favicon.ico",
-        "googleb10f70f36702c0d6.html"
+        "googleb10f70f36702c0d6.html",
+        "sitemap.xml"
       ],
       "platform": "server",
       "index": "index.html",
