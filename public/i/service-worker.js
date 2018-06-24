@@ -27,6 +27,7 @@ const FILES_TO_CACHE = [
     '/i/fonts/WeberHandITCStd.woff2',
     // Home
     '/i/vr-people-workplace-2017-04-14.jpg',
+    '/i/workplace-kantar-2018.jpg',
     '/i/n-rosberg_japan-gp_2016_08.jpg',
     // Avatars
     '/i/avatars/eyes-beard.jpg',

@@ -64,7 +64,23 @@
 
         <div class="card">
             <h2 class="acenter">&lt;Hello, World!&gt;</h2>
-            <p><img alt="workplace" src="./i/vr-people-workplace-2017-04-14.jpg" width="100%"></p>
+            <p><img id="workplace" alt="workplace" src="./i/vr-people-workplace-2017-04-14.jpg" width="100%"></p>
+            <script>
+                const workplaceEl = document.querySelector('#workplace');
+                const imgs = [
+                    './i/vr-people-workplace-2017-04-14.jpg',
+                    './i/workplace-kantar-2018.jpg'
+                ];
+                workplaceEl.addEventListener('click', () => {
+                    const currentValue = workplaceEl.getAttribute('src');
+                    const currentIndex = imgs.findIndex((value) => value === currentValue);
+                    let newIndex = currentIndex + 1;
+                    if (newIndex >= imgs.length) {
+                        newIndex = 0;
+                    }
+                    workplaceEl.setAttribute('src', imgs[newIndex]);
+                });
+            </script>
             <blockquote>
                 Only the people who take learning, growth and skills development into their own hands will be tomorrow's
                 leaders.

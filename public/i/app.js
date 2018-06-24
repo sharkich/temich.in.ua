@@ -2,15 +2,24 @@
     'use strict';
 
     const loadingEls = document.querySelectorAll('.loading');
+    if (!loadingEls) {
+        return;
+    }
     loadingEls.forEach((el) => {
         el.removeAttribute('hidden');
     });
 
     const loaderEl = document.querySelector('#spinner');
+    if (!loaderEl) {
+        return;
+    }
     loaderEl.setAttribute('hidden', 'true');
 
     const logoEl = document.querySelector('#logo');
     const homeEl = document.querySelector('#home');
+    if (!logoEl || !homeEl) {
+        return;
+    }
     const mouseInEvent = () => {
         logoEl.classList.add('hover');
         homeEl.classList.add('hover');
