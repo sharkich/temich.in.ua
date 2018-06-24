@@ -4,6 +4,8 @@
 morgan.log
 *.old
 *.icloud
+~data
+~data/~i.old
 
 # Built #
 /dist/
