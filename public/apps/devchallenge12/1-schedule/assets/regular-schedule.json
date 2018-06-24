@@ -1,0 +1,203 @@
+[
+  {
+    "start": "23:30",
+    "end": "24:00",
+    "title": "Sleep",
+    "kind": "sleep",
+    "height": 0
+  },
+  {
+    "start": "00:00",
+    "end": "8:00",
+    "title": "Sleep",
+    "kind": "sleep",
+    "height": 0
+  },
+
+  {
+    "start": "8:00",
+    "end": "8:00",
+    "title": "Wake up",
+    "kind": "blue",
+    "height": 2
+  },
+  {
+    "start": "23:30",
+    "end": "23:30",
+    "title": "Fall asleep",
+    "kind": "blue",
+    "height": 2
+  },
+
+  {
+    "start": "8:00",
+    "end": "9:00",
+    "title": "",
+    "kind": "red",
+    "height": 0
+  },
+  {
+    "start": "9:00",
+    "end": "10:00",
+    "title": "",
+    "kind": "red",
+    "height": 0
+  },
+
+
+  {
+    "start": "10:00",
+    "end": "10:30",
+    "title": "Stand-UP",
+    "kind": "red",
+    "height": 1
+  },
+  {
+    "start": "10:30",
+    "end": "10:45",
+    "title": "Coffee",
+    "kind": "yellow",
+    "height": 1
+  },
+  {
+    "start": "10:45",
+    "end": "11:00",
+    "title": "Back to flow",
+    "kind": "yellow",
+    "height": 1
+  },
+
+  {
+    "start": "11:00",
+    "end": "12:00",
+    "title": "Flow",
+    "kind": "green",
+    "height": 1
+  },
+
+  {
+    "start": "12:00",
+    "end": "12:45",
+    "title": "Lunch",
+    "kind": "red",
+    "height": 1
+  },
+  {
+    "start": "12:45",
+    "end": "13:45",
+    "title": "Back to flow",
+    "kind": "yellow",
+    "height": 1
+  },
+
+  {
+    "start": "13:45",
+    "end": "16:00",
+    "title": "Flow",
+    "kind": "green",
+    "height": 1
+  },
+
+  {
+    "start": "16:00",
+    "end": "16:15",
+    "title": "Meal",
+    "kind": "red",
+    "height": 1
+  },
+  {
+    "start": "16:15",
+    "end": "16:45",
+    "title": "Back to flow",
+    "kind": "yellow",
+    "height": 1
+  },
+
+  {
+    "start": "16:45",
+    "end": "19:00",
+    "title": "Flow",
+    "kind": "green",
+    "height": 1
+  },
+
+  {
+    "start": "19:00",
+    "end": "20:00",
+    "title": "",
+    "kind": "red",
+    "height": 0
+  },
+
+  {
+    "start": "20:00",
+    "end": "22:30",
+    "title": "Time with family",
+    "kind": "green",
+    "height": 1
+  },
+  {
+    "start": "22:30",
+    "end": "23:30",
+    "title": "Personal time",
+    "kind": "yellow",
+    "height": 1
+  },
+
+  {
+    "start": "10:00",
+    "end": "19:00",
+    "title": "Activity at work",
+    "kind": "title",
+    "background": "green"
+  },
+  {
+    "start": "20:00",
+    "end": "23:30",
+    "title": "Activity at home",
+    "kind": "title",
+    "background": "green"
+  },
+
+  {
+    "start": "9:00",
+    "end": "10:00",
+    "title": "Transport",
+    "kind": "title",
+    "background": "transparent"
+  },
+  {
+    "start": "19:00",
+    "end": "20:00",
+    "title": "Transport",
+    "kind": "title",
+    "background": "transparent"
+  },
+
+  {
+    "start": "7:30",
+    "end": "10:30",
+    "title": "Heavy traffic on the way to work",
+    "kind": "background"
+  },
+  {
+    "start": "17:00",
+    "end": "19:30",
+    "title": "Heavy traffic on the way to home",
+    "kind": "background"
+  },
+  {
+    "start": "10:00",
+    "end": "10:00",
+    "title": "Work starts",
+    "kind": "red",
+    "height": 2
+  },
+  {
+    "start": "19:00",
+    "end": "19:00",
+    "title": "Work ends",
+    "kind": "red",
+    "height": 2
+  }
+]
