@@ -51,31 +51,18 @@
 <main class="main" role="main">
     <div class="content">
 
-        <h1 class="title">Apps</h1>
+        <h1 class="title">My Apps & Projects</h1>
 
-        <div class="card card--avatar">
-            <img src="/i/avatars/hard-working.jpg" alt="Artem temich Koziar" class="avatar" width="255" height="255"
-                 align="right">
+        <div class="card">
+            <h2><a href="/apps/pace">Running Pace Calculator</a></h2>
+            <p>Calculate your running pace/speed/time per mile or kilometer</p>
+            <p><img src="./pace/usain-bolt.jpg" alt="Smile Running Pro Usain Bolt" width="100%"></p>
+        </div>
 
-            <h2>[TODO] This page under construction.</h2>
-
-            <ul>
-                <li>
-                    <a href="/apps/pace">Running Pace Calculator</a> &mdash; Calculate your running pace/speed/time per
-                    mile or kilometer
-                </li>
-                <li>
-                    <a href="/apps/memory">memory</a> &mdash; Methodics of Mnemonics
-                </li>
-                <li>
-                    <a href="https://github.com/sharkich/t-json-viewer">t-json-viewer</a> &mdash; Angular component for
-                    objects debugging <i>[DEPRECATED]</i>
-                </li>
-                <li>
-                    <b data-href="/apps/typography">typography</b> &mdash; HTML-symbols for Web
-                </li>
-            </ul>
-
+        <div class="card">
+            <h2><a href="/apps/memory">Memory</a></h2>
+            <p>Methodics of Mnemonics</p>
+            <p><img src="./memory/memory.png" alt="Methodics of Mnemonics" width="100%"></p>
         </div>
 
         <div class="card">
@@ -83,6 +70,7 @@
             <h2>Dev Challenge 12</h2>
             <ul>
                 <li>
+                    <img src="./devchallenge12/1-schedule.png" alt="JS Schedule" width="150" align="right">
                     <h3>Round 1</h3>
                     <p>
                         App: <a href="./devchallenge12/1-schedule">Schedule</a><br>
@@ -90,6 +78,7 @@
                     </p>
                 </li>
                 <li>
+                    <img src="./devchallenge12/2-libraries.png" alt="JS Libraries" width="150" align="right">
                     <h3>Round 2</h3>
                     <p>
                         App: <a href="./devchallenge12/2-libraries">Libraries</a><br>
@@ -104,6 +93,35 @@
                     </p>
                 </li>
             </ul>
+            <p>
+                <img src="./devchallenge12/3-final-spaces-game.png" alt="WebGL Spaces Game" width="100%">
+            </p>
+        </div>
+
+        <div class="card card--avatar">
+            <img src="/i/avatars/hard-working.jpg" alt="Artem temich Koziar" class="avatar" width="255" height="255" align="right">
+
+            <h2>In progress</h2>
+            <ul>
+                <li>
+                    <a href="http://cryppto.io/">Cryppto</a> &mdash; Managing cryptocurrency portfolio with rebalancing
+                </li>
+            </ul>
+
+            <h2>Archived projects</h2>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/sharkich/t-json-viewer">t-json-viewer</a> &mdash; Angular component for objects debugging
+                </li>
+                <li>
+                    <b>www.mobillius.com.ua</b> &mdash; E-commerce
+                </li>
+                <li>
+                    <b>www.sitetime.kiev.ua</b> &mdash; Web-studio
+                </li>
+            </ul>
+
         </div>
 
     </div>
@@ -129,7 +147,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59357319-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag () {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-59357319-1');
