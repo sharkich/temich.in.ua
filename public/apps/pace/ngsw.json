@@ -60,10 +60,10 @@
     "/assets/strawberry.png": "c21a159b145b0a5c9930d309b7eab1643fcad3b8",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
     "/index.html": "7151c295445501f8a96bfeaba84fd338f777dc7f",
-    "/main.js": "f806a3ed82ad8ed5399ec10582f3cfc14dc0add7",
+    "/main.js": "a80fb7cec024fdec12f307a96f33ceab7580a420",
     "/polyfills.js": "8949bb1b1e302dda246f6ed9c2da703270360b1f",
     "/runtime.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "/service-worker.js": "a785b2038b40fa4f2564b2c3263958714bc8b021",
+    "/service-worker.js": "17df7e6ce1969e5eee7e8b7ad7f929c1bc976c2b",
     "/styles.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
