@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Running Pace Calculator</title>
+    <meta name="description" content="running-pace-calculator">
+    <base href="./">
+
+    <link rel="stylesheet" type="text/css" href="/i/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="running-pace-calculator">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="running-pace-calculator">
+    <link rel="icon" sizes="192x192" href="./assets/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="./assets/icons/icon-192x192.png">
+    <meta name="msapplication-TileImage" content="./assets/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#1976d2">
+    <meta name="theme-color" content="#1976d2">
+
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#1976d2">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="content">
+        <h1 class="header__title"><a href="/" id="logo">Artem Koziar</a></h1>
+        <div class="width-100"></div>
+        <nav class="header__nav">
+            <ul class="header__nav__ul">
+                <li class="header__nav__li"><a href="/" id="home">home</a></li>
+                <li class="header__nav__li"><b><a href="/apps">apps</a></b></li>
+                <li class="header__nav__li"><a href="/log"><span class="grey">*</span>log</a></li>
+                <li class="header__nav__li"><a href="/family">family</a></li>
+                <li class="header__nav__li"><a href="/cv">cv</a></li>
+                <li class="header__nav__li"><a href="/contacts">contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main" role="main">
+    <div class="content">
+        <noscript style="background: yellow;padding: 8px;">Your browser does not support JavaScript!</noscript>
+
+        <div class="card">
+            <app-root>
+                Loading...
+            </app-root>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__copyright">
+        &copy;&nbsp;1984–2018 Artem&nbsp;Koziar
+    </div>
+</footer>
+
+<script>
+    (function () {
+        'use strict';
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js', {scope: './'});
+        }
+    })();
+</script>
+<script type="text/javascript" src="runtime.js"></script>
+<script type="text/javascript" src="polyfills.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+<div class="loading" hidden></div>
+<div class="loader" id="spinner">
+    <svg viewBox="0 0 32 32" width="32" height="32">
+        <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+</div>
+
+<script src="/i/service-worker-registration.js" async></script>
+<script src="/i/app.js" async></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59357319-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag () {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-59357319-1');
+</script>
+
+</body>
+</html>
