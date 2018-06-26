@@ -217,6 +217,7 @@ Footer
  */
 
 .footer {
+    position: relative;
     color: #FFF;
     background: #505050;
     padding: 8px 0;
@@ -227,6 +228,12 @@ Footer
     font-family: 'WeberHandITCStd';
     text-align: center;
     font-size: 10pt;
+}
+
+.footer .hitua {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
 }
 
 /**
