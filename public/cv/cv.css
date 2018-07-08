@@ -1,3 +1,15 @@
 .experience .card {
     padding-top: 0;
 }
+
+.main .card {
+    min-height: 140px;
+}
+
+.cv-logo {
+    float: right
+}
+
+.cv-descr {
+    padding-top: 16px;
+}
