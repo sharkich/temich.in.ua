@@ -1,0 +1,18 @@
+@keyframes flickerAnimation {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.melolontha {
+    position: absolute;
+    top: 121px;
+    left: 21px;
+    width: 64px;
+    height: 31px;
+    background: url('/i/melolontha/melolontha.png') 0 0 no-repeat;
+    background-size: 100%;
+    transform: rotate(20deg);
+
+    animation: flickerAnimation 0.16s 10;
+}
