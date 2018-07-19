@@ -45,6 +45,10 @@ h6 {
   font-family: "WeberHandITCStd", "Helvetica", "Verdana", sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 a {
   color: #3ba0d4;
 }
@@ -345,4 +349,18 @@ Loader
     content: " (" attr(href) ")";
     font-size: 90%;
   }
+}
+
+.github {
+    font-style: italic;
+    margin-left: 20px;
+}
+.github:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url('/i/github.ico') 0 0 no-repeat;
+    background-size: 100%;
+    margin-left: -18px;
 }
