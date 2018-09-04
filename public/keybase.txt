@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/temich
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://temich.in.ua
+  * I am temich (https://keybase.io/temich) on keybase.
+  * I have a public key ASDsdMoxmAHTOjcmk8bmSHMpCpS3wopR1Le9J0itVo1Mbgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ec74ca319801d33a372693c6e64873290a94b7c28a51d4b7bd2748ad568d4c6e0a",
+      "host": "keybase.io",
+      "kid": "0120ec74ca319801d33a372693c6e64873290a94b7c28a51d4b7bd2748ad568d4c6e0a",
+      "uid": "fc46cc1ffa8dbdb799d3466e4b34ea19",
+      "username": "temich"
+    },
+    "merkle_root": {
+      "ctime": 1536033573,
+      "hash": "a4af31b3d5253f63ba752b44644351cd9ca572a28c974d7e2358ced49e361b058ac4a8f99f18742dfb6fa04ad1c041f39769db4069385178a86bc9c9bb36104a",
+      "hash_meta": "082bc260dca3c0e62a1253e3cb3283d95955177833bf09e5bcef0c61fa3b58ff",
+      "seqno": 3559015
+    },
+    "service": {
+      "entropy": "cowENOMwa9EcAzhgvQv4Dto1",
+      "hostname": "temich.in.ua",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.5.1"
+  },
+  "ctime": 1536033613,
+  "expire_in": 504576000,
+  "prev": "a410f92a4fc5e5c3214fee552a1321888b319d6c660b82db1be4f52e7635c6a8",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7HTKMZgB0zo3JpPG5khzKQqUt8KKUdS3vSdIrVaNTG4Kp3BheWxvYWTESpcCB8QgpBD5Kk/F5cMhT+5VKhMhiIsxnWxmC4LbG+T1LnY1xqjEIEiPLP7XfKnNpIOe8NJVxvN1TVGuDVRzCofl5UWc/0AmAgHCo3NpZ8RAc5UzVJCxeapcDiVBEo1rGu1ZLz69D6/G6FNSG0pGwxqyKbxv+WCrJsy3h5JE0D2BpSkfVX0l+6VTc47HypgfD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOxWRARAckJrQKIXFcl6EMxYB1niIYEAN6gUiUcQfFKHo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/temich
+
+==================================================================
