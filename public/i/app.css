@@ -125,7 +125,9 @@ App
   background-color: #565656;
   color: transparent;
   text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
-  background-clip: inherit;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
 .main .card {
