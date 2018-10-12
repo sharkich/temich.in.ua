@@ -4,6 +4,7 @@
 morgan.log
 *.old
 *.icloud
+.firebase
 ~data
 ~data/~i.old
 
