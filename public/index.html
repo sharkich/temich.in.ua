@@ -63,27 +63,55 @@
         <h1 class="title"><span class="nobr">Artem Koziar's</span> <span class="nobr">Private Site</span></h1>
 
         <div class="home-atavar">
-            <img src="/i/avatars/hololens.jpg" alt="Artem Koziar. temich" class="avatar" width="255" height="255">
+            <img src="/i/avatars/hololens.jpg" alt="Artem Koziar. temich" id="avatar" class="avatar" width="255" height="255">
+            <script>
+                (function () {
+                    const avatarsEl = document.querySelector('#avatar');
+                    const imgs = [
+                        '/i/avatars/hololens.jpg',
+                        '/i/avatars/dnipro-marathon-2018.jpg',
+                        '/i/avatars/eyes-beard.jpg',
+                        '/i/avatars/family.jpg',
+                        '/i/avatars/hard-working.jpg',
+                        '/i/avatars/kantar-avatar.jpg',
+                        '/i/avatars/phone.jpg',
+                        '/i/avatars/player.jpg',
+                        '/i/avatars/shadow.jpg',
+                        '/i/avatars/wc.jpg'
+                    ];
+                    avatarsEl.addEventListener('click', () => {
+                        const currentValue = avatarsEl.getAttribute('src');
+                        const currentIndex = imgs.findIndex((value) => value === currentValue);
+                        let newIndex = currentIndex + 1;
+                        if (newIndex >= imgs.length) {
+                            newIndex = 0;
+                        }
+                        avatarsEl.setAttribute('src', imgs[newIndex]);
+                    });
+                })();
+            </script>
         </div>
 
         <div class="card">
             <h2 class="acenter">&lt;Hello, World!&gt;</h2>
             <p><img id="workplace" alt="workplace" src="./i/workplace-kantar-2018.jpg" width="100%"></p>
             <script>
-                const workplaceEl = document.querySelector('#workplace');
-                const imgs = [
-                    './i/vr-people-workplace-2017-04-14.jpg',
-                    './i/workplace-kantar-2018.jpg'
-                ];
-                workplaceEl.addEventListener('click', () => {
-                    const currentValue = workplaceEl.getAttribute('src');
-                    const currentIndex = imgs.findIndex((value) => value === currentValue);
-                    let newIndex = currentIndex + 1;
-                    if (newIndex >= imgs.length) {
-                        newIndex = 0;
-                    }
-                    workplaceEl.setAttribute('src', imgs[newIndex]);
-                });
+                (function () {
+                    const workplaceEl = document.querySelector('#workplace');
+                    const imgs = [
+                        './i/vr-people-workplace-2017-04-14.jpg',
+                        './i/workplace-kantar-2018.jpg'
+                    ];
+                    workplaceEl.addEventListener('click', () => {
+                        const currentValue = workplaceEl.getAttribute('src');
+                        const currentIndex = imgs.findIndex((value) => value === currentValue);
+                        let newIndex = currentIndex + 1;
+                        if (newIndex >= imgs.length) {
+                            newIndex = 0;
+                        }
+                        workplaceEl.setAttribute('src', imgs[newIndex]);
+                    });
+                })();
             </script>
             <blockquote>
                 Only the people who take learning, growth and skills development into their own hands will be tomorrow's
@@ -102,7 +130,25 @@
                 <h3>I love cycling.</h3>
             </div>
             <p>
-                <img alt="sport" src="./i/sport.jpg" width="100%">
+                <img alt="Artem Koziar Triathlon" src="./i/sport.jpg" id="sport" width="100%">
+                <script>
+                    (function () {
+                        const avatarsEl = document.querySelector('#sport');
+                        const imgs = [
+                            '/i/sport.jpg',
+                            '/i/sport-dnipro-marathone-2018.jpg'
+                        ];
+                        avatarsEl.addEventListener('click', () => {
+                            const currentValue = avatarsEl.getAttribute('src');
+                            const currentIndex = imgs.findIndex((value) => value === currentValue);
+                            let newIndex = currentIndex + 1;
+                            if (newIndex >= imgs.length) {
+                                newIndex = 0;
+                            }
+                            avatarsEl.setAttribute('src', imgs[newIndex]);
+                        });
+                    })();
+                </script>
             </p>
             <h2 class="i-love-triathlon">Triathlon</h2>
         </div>

@@ -54,7 +54,26 @@
         <div class="card card--avatar">
 
             <p class="acenter">
-                <img src="/family/my-family-and-i.jpg" alt="Artem Koziar's family" width="100%">
+                <img src="./my-family-and-i.jpg" id="family" alt="Artem Koziar's family" width="100%">
+                <script>
+                    (function () {
+                        const familyEl = document.querySelector('#family');
+                        const imgs = [
+                            './my-family-and-i.jpg',
+                            './my-family-and-i-2018.jpg'
+                        ];
+                        familyEl.addEventListener('click', () => {
+                            const currentValue = familyEl.getAttribute('src');
+                            const currentIndex = imgs.findIndex((value) => value === currentValue);
+                            let newIndex = currentIndex + 1;
+                            if (newIndex >= imgs.length) {
+                                newIndex = 0;
+                            }
+                            familyEl.setAttribute('src', imgs[newIndex]);
+                        });
+                    })();
+                </script>
+
                 This is a reason of my life.
             </p>
 
