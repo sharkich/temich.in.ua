@@ -1,6 +1,28 @@
 (function () {
     'use strict';
 
+
+    const presentEl = document.getElementById('present');
+    if (presentEl) {
+        const monthDiff = (dateFrom, dateTo) => {
+            return dateTo.getMonth() - dateFrom.getMonth() +
+                (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
+        };
+        const months = monthDiff(new Date(2019, 10), new Date());
+        presentEl.innerText = `(${months + 1} months)`;
+    }
+
+    const yearsOldEl = document.getElementById('years-old');
+    if (yearsOldEl) {
+        const diff = (birthday) => {
+            const ageDifMs = Date.now() - birthday;
+            const ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        };
+        const years = diff(new Date(1984, 8, 26));
+        yearsOldEl.innerText = `(${years} years old)`;
+    }
+
     const loadingEls = document.querySelectorAll('.loading');
     if (!loadingEls) {
         return;
