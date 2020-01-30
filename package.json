@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./public/ && python -m SimpleHTTPServer 8000"
+    "start": "cd ./public/ && python -m SimpleHTTPServer 8000",
+    "deploy": "firebase deploy --only hosting",
+    "fire": "yarn deploy"
   },
   "keywords": [],
   "author": "",
