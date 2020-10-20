@@ -8,7 +8,7 @@
             return dateTo.getMonth() - dateFrom.getMonth() +
                 (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
         };
-        const months = monthDiff(new Date(2019, 10), new Date());
+        const months = monthDiff(new Date(2020, 4), new Date());
         presentEl.innerText = `(${months + 1} months)`;
     }
 
