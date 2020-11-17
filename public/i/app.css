@@ -346,7 +346,7 @@ Loader
   }
 
   .show-on-print {
-    display: initial;
+    display: block;
   }
 
   .hide-on-print {
@@ -362,7 +362,7 @@ Loader
     color: #000 !important;
   }
 
-  .card a[href^="http://"]:after, .card a[href^="https://"]:after, .card a[href^="mailto"]:after {
+  .card a[href^="http://"]:after, .card a[href^="https://"]:after {
     content: " (" attr(href) ")";
     font-size: 90%;
   }
