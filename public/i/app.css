@@ -329,6 +329,10 @@ Loader
   }
 }
 
+.show-on-print {
+  display: none;
+}
+
 @media print {
   * {
     color: #000;
@@ -339,6 +343,14 @@ Loader
 
   pre, blockquote, .card {
     page-break-inside: avoid;
+  }
+
+  .show-on-print {
+    display: initial;
+  }
+
+  .hide-on-print {
+    display: none;
   }
 
   .header,
