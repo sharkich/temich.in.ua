@@ -235,6 +235,33 @@ Welcome
   margin-bottom: 80px;
 }
 
+.get-in-touch-button__modal {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.get-in-touch-button__modal__link {
+  padding: 4px;
+  margin: 6px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-in-touch-button__modal__link:hover {
+  border-color: #fff;
+}
+
 .technologies {
   margin: 40px auto;
   width: 90%;
