@@ -104,7 +104,7 @@ dl dd {
     clear: both;
 }
 
-a[target=_blank] {
+._blank {
   border-bottom: 1px solid;
 }
 
@@ -241,8 +241,13 @@ Welcome
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 220px;
+  width: 240px;
   margin: 0 auto;
+  transition: opacity 0.6s linear;
+}
+
+.get-in-touch-button__modal {
+  display: none;
 }
 
 .get-in-touch-button__modal__link {
@@ -258,8 +263,21 @@ Welcome
   align-items: center;
 }
 
+
+.button-and-modal {
+  height: 60px;
+}
+
 .get-in-touch-button__modal__link:hover {
   border-color: #fff;
+}
+
+.card-black .get-in-touch-button__modal__link {
+  border-color: #666;
+}
+
+.card-black .get-in-touch-button__modal__link:hover {
+  border-color: #999;
 }
 
 .technologies {
@@ -354,7 +372,9 @@ Header
 }
 
 .header__nav {
+  font-family: "Helvetica", "Verdana", sans-serif;
 }
+
 .header__nav__ul {
   display: flex;
   margin: 0;

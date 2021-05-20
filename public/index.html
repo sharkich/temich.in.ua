@@ -68,15 +68,17 @@
                 <h2>&lt;Hello, World!&gt;</h2>
                 <h1 class="title"><span class="nobr">I'm Artem Koziar</span></h1>
                 <h2 class="welcome__text__headline">Principal Software Engineer, <br>Front-end development consultant, <br>Coach</h2>
-                <p class="acenter">
-                    <button class="button">Get in touch!</button>
-                </p>
-                <p class="get-in-touch-button__modal">
-                    <a class="get-in-touch-button__modal__link" href="#" title="Telegram"><img src="/i/messengers/telegram.png" width="32" alt="Telegram" /></a>
-                    <a class="get-in-touch-button__modal__link" href="#" title="Messenger"><img src="/i/messengers/messenger.png" width="32" alt="Messenger" /></a>
-                    <a class="get-in-touch-button__modal__link" href="#" title="Viber"><img src="/i/messengers/viber.png" width="32" alt="Viber" /></a>
-                    <a class="get-in-touch-button__modal__link" href="#" title="Mail"><img src="/i/messengers/gmail.png" width="32" alt="Mail" /></a>
-                </p>
+                <div class="button-and-modal">
+                    <p class="acenter">
+                        <button class="button get-in-touch-button">Get in touch!</button>
+                    </p>
+                    <p class="get-in-touch-button__modal">
+                        <a class="get-in-touch-button__modal__link" href="https://telegram.me/sharkich" target="_blank" title="Telegram"><img src="/i/messengers/telegram.png" width="32" alt="Telegram" /></a>
+                        <a class="get-in-touch-button__modal__link" href="https://m.me/temich.in.ua" target="_blank" title="Messenger"><img src="/i/messengers/messenger.png" width="32" alt="Messenger" /></a>
+                        <a class="get-in-touch-button__modal__link" href="viber://pa?chatURI=+380677317648" target="_blank" title="Viber"><img src="/i/messengers/viber.png" width="32" alt="Viber" /></a>
+                        <a class="get-in-touch-button__modal__link" href="mailto:koziar.artem@gmail.com" target="_blank" title="Mail"><img src="/i/messengers/gmail.png" width="32" alt="Mail" /></a>
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -134,7 +136,7 @@
                 <dd>Git, automation, testing, continuous integration and delivery</dd>
             </dl>
 
-            <p class="acenter"><em>Read about my recent experience on my <a href="/about/cv">CV</a> or <a href="https://www.linkedin.com/in/temich/" target="_blank">LinkedIn</a>.</em></p>
+            <p class="acenter"><em>Read about my recent experience on my <a href="/about/cv">CV</a> or <a href="https://www.linkedin.com/in/temich/" target="_blank" class="_blank">LinkedIn</a>.</em></p>
 
         </div>
 
@@ -167,7 +169,15 @@
         <div class="card card-text card-black get-in-touch">
             <h2 class="acenter">Want to work together?</h2>
             <p class="acenter">I&rsquo;m always up&nbsp;for new challenges to&nbsp;collaborate with people and companies to&nbsp;realize their products. Don&rsquo;t be&nbsp;a&nbsp;stranger, say hello!</p>
-            <p class="acenter"><button class="button">Get in touch!</button></p>
+            <div class="button-and-modal">
+                <p class="acenter"><button class="button get-in-touch-button">Get in touch!</button></p>
+                <p class="get-in-touch-button__modal">
+                    <a class="get-in-touch-button__modal__link" href="https://telegram.me/sharkich" target="_blank" title="Telegram"><img src="/i/messengers/telegram.png" width="32" alt="Telegram" /></a>
+                    <a class="get-in-touch-button__modal__link" href="https://m.me/temich.in.ua" target="_blank" title="Messenger"><img src="/i/messengers/messenger.png" width="32" alt="Messenger" /></a>
+                    <a class="get-in-touch-button__modal__link" href="viber://pa?chatURI=+380677317648" target="_blank" title="Viber"><img src="/i/messengers/viber.png" width="32" alt="Viber" /></a>
+                    <a class="get-in-touch-button__modal__link" href="mailto:koziar.artem@gmail.com" target="_blank" title="Mail"><img src="/i/messengers/gmail.png" width="32" alt="Mail" /></a>
+                </p>
+            </div>
         </div>
 
     </div>
@@ -232,6 +242,18 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-59357319-1');
+</script>
+
+<script>
+    const buttons = document.querySelectorAll('.get-in-touch-button');
+    const modals = document.querySelectorAll('.get-in-touch-button__modal');
+
+    const clickHandler = () => {
+      buttons.forEach((button) => button.style.display = 'none');
+      modals.forEach((modal) => modal.style.display = 'flex');
+    };
+
+    buttons.forEach((button) => button.addEventListener('click', clickHandler));
 </script>
 
 </body>
