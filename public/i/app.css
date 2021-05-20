@@ -104,6 +104,10 @@ dl dd {
     clear: both;
 }
 
+a[target=_blank] {
+  border-bottom: 1px solid;
+}
+
 /**
 App
  */
