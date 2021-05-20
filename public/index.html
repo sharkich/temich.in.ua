@@ -60,127 +60,105 @@
 <main class="main" role="main">
     <div class="content">
 
-        <h1 class="title"><span class="nobr">Artem Koziar's</span> <span class="nobr">Private Site</span></h1>
-
-        <div class="home-atavar">
-            <img src="/i/avatars/hololens.jpg" alt="Artem Koziar. temich" id="avatar" class="avatar" width="255" height="255">
-            <script>
-                (function () {
-                    const avatarsEl = document.querySelector('#avatar');
-                    const imgs = [
-                        '/i/avatars/hololens.jpg',
-                        '/i/avatars/dnipro-marathon-2018.jpg',
-                        '/i/avatars/eyes-beard.jpg',
-                        '/i/avatars/family.jpg',
-                        '/i/avatars/hard-working.jpg',
-                        '/i/avatars/kantar-avatar.jpg',
-                        '/i/avatars/phone.jpg',
-                        '/i/avatars/player.jpg',
-                        '/i/avatars/shadow.jpg',
-                        '/i/avatars/wc.jpg'
-                    ];
-                    avatarsEl.addEventListener('click', () => {
-                        const currentValue = avatarsEl.getAttribute('src');
-                        const currentIndex = imgs.findIndex((value) => value === currentValue);
-                        let newIndex = currentIndex + 1;
-                        if (newIndex >= imgs.length) {
-                            newIndex = 0;
-                        }
-                        avatarsEl.setAttribute('src', imgs[newIndex]);
-                    });
-                })();
-            </script>
-        </div>
-
-        <div class="card">
-            <h2 class="acenter">&lt;Hello, World!&gt;</h2>
-            <p><img id="workplace" alt="workplace" src="./i/workplace-grammarly-1.jpg" width="100%"></p>
-            <script>
-                (function () {
-                    const workplaceEl = document.querySelector('#workplace');
-                    const imgs = [
-                        './i/workplace-grammarly-1.jpg',
-                        './i/workplace-grammarly-2.jpg',
-                        './i/vr-people-workplace-2017-04-14.jpg',
-                        './i/workplace-kantar-2018.jpg'
-                    ];
-                    workplaceEl.addEventListener('click', () => {
-                        const currentValue = workplaceEl.getAttribute('src');
-                        const currentIndex = imgs.findIndex((value) => value === currentValue);
-                        let newIndex = currentIndex + 1;
-                        if (newIndex >= imgs.length) {
-                            newIndex = 0;
-                        }
-                        workplaceEl.setAttribute('src', imgs[newIndex]);
-                    });
-                })();
-            </script>
-            <blockquote>
-                Only the people who take learning, growth and skills development into their own hands will be tomorrow's
-                leaders.
-            </blockquote>
-            <p>🏆😁 #vrinfinity #vrpeople #kyiv #ukraine #krvr #vr #vrinfinity #kantar #kantarretail
-                #kantarretailvirtualreality #greatpeople #development #selfdevelopment #learning #growth #kyiv #ukraine
-                <br><a href="https://www.instagram.com/p/BS4A0QjAYTD/">https://www.instagram.com/p/BS4A0QjAYTD/</a></p>
-            <p>&copy;&nbsp;<a href="https://www.instagram.com/vr.people/">vr.people</a></p>
-        </div>
-
-        <div class="card">
-            <div class="i-love">
-                <h3>I love running.</h3>
-                <h3>I love swimming.</h3>
-                <h3>I love cycling.</h3>
+        <div class="welcome">
+            <div class="welcome__atavar">
+                <img src="/i/avatars/hololens.jpg" alt="Artem Koziar" id="avatar" class="avatar" width="255" height="255">
             </div>
-            <p>
-                <img alt="Artem Koziar Triathlon" src="./i/sport.jpg" id="sport" width="100%">
-                <script>
-                    (function () {
-                        const avatarsEl = document.querySelector('#sport');
-                        const imgs = [
-                            '/i/sport.jpg',
-                            '/i/sport-dnipro-marathone-2018.jpg'
-                        ];
-                        avatarsEl.addEventListener('click', () => {
-                            const currentValue = avatarsEl.getAttribute('src');
-                            const currentIndex = imgs.findIndex((value) => value === currentValue);
-                            let newIndex = currentIndex + 1;
-                            if (newIndex >= imgs.length) {
-                                newIndex = 0;
-                            }
-                            avatarsEl.setAttribute('src', imgs[newIndex]);
-                        });
-                    })();
-                </script>
-            </p>
-            <h2 class="i-love-triathlon">Triathlon</h2>
+            <div class="welcome__text">
+                <h2>&lt;Hello, World!&gt;</h2>
+                <h1 class="title"><span class="nobr">I'm Artem Koziar</span></h1>
+                <h2>Principal Software Engineer, <br>Front-end development consultant, <br>Coach</h2>
+            </div>
         </div>
 
-        <div class="card">
-            <h2>What this site about</h2>
-            <p>This is my stage. This is my database. This is my avatar. This is some kind of me.</p>
-            <p>
-                <img alt="f1" src="./i/n-rosberg_japan-gp_2016_08.jpg" width="100%">
-                <br>
-                <span class="small grey">Nico Rosberg (GER) Mercedes MGP W07 Hybrid, Japanese F1 Grand Prix, Suzuka, 7th-9th
-                    October, 2016. &copy;&nbsp;<a href="https://www.peterjfox.com/" class="grey">Peter J Fox</a></span>
-            </p>
+        <div class="main__quote">
+            <blockquote>
+                I&nbsp;have over 15&nbsp;years of&nbsp;professional experience in&nbsp;software development. I&nbsp;now provide <strong>freelance development and consultancy</strong>&nbsp;&mdash; helping teams collaborate and work better together, streamline workflow, and deliver quality websites and applications.
+            </blockquote>
         </div>
 
-        <div class="card">
-            <h2>Links</h2>
-            <ul>
-                <li>
-                    <a href="/apps/pace">Running Pace Calculator</a> &mdash; Calculate your running pace/speed/time per mile or kilometer
-                </li>
-                <li>
-                    <a href="https://github.com/sharkich/nemonic" class="github">Nemonic</a>
-                    <a href="/apps/memory">memory</a> &mdash; Methodics of Mnemonics.
-                </li>
-            </ul>
+        <div class="companies">
+            <h3 class="acenter">A&nbsp;handful of&nbsp;the fantastic businesses and teams I&rsquo;ve worked with in&nbsp;my&nbsp;career so&nbsp;far</h3>
+            <div class="logos">
+                <img src="/about/i/grammarly-full.png" width="250" alt="Grammarly">
+                <img src="/about/i/ciklum-full.png" width="150" alt="Ciklum">
+                <img src="/about/i/luxoft-full.png" width="150" alt="Luxoft">
+                <img src="/about/i/innovecs.png" height="96" alt="Innovecs">
+            </div>
         </div>
 
-        <div class="card">
-            <img alt="turquoise waves" src="./i/turquoise-waves.jpg" width="100%">
+        <div class="card card-text">
+            <p>I&rsquo;ve spent my&nbsp;career so&nbsp;far at&nbsp;software companies and in&nbsp;some of&nbsp;the top digital agencies in&nbsp;the Ukraine. I&nbsp;have worked on&nbsp;huge scale, multi-lingual, content-managed platforms for companies around the world.</p>
+            <p>I&nbsp;currently live in&nbsp;the the Ukraine and can travel or&nbsp;work remotely where required. I&rsquo;m looking for <strong>front-end development</strong> and <strong>consultancy</strong> work for digital agencies or&nbsp;companies building their own products.</p>
+        </div>
+
+        <div class="technologies">
+            <h3 class="acenter">Technologies</h3>
+            <div class="logos">
+                <img src="/i/technologies/js.png" width="128" alt="JavaScript">
+                <img src="/i/technologies/ts.png" width="128" alt="TypeScript">
+                <img src="/i/technologies/react.png" width="128" alt="React">
+                <img src="/i/technologies/angular.png" width="128" alt="Angular">
+            </div>
+        </div>
+
+        <div class="card card-text ">
+            <H2>My expertise is in:</H2>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>templating languages, style guides, pattern libraries, prototyping</dd>
+
+                <dt>CSS</dt>
+                <dd>Sass, JSS, Styled Components</dd>
+
+                <dt>JavaScript</dt>
+                <dd>ES6+, <strong>React</strong>, Redux, Flux, MobX, RxJS, React Native, <strong>Angular</strong></dd>
+
+                <dt>Accessibility</dt>
+                <dd>testing, audits, education and improvement</dd>
+
+                <dt>Team management</dt>
+                <dd>code standards and best practises, training, consultation, hiring, DISK</dd>
+
+                <dt>Workflow</dt>
+                <dd>Git, automation, testing, continuous integration and delivery</dd>
+            </dl>
+
+            <p class="acenter"><em>Read about my recent experience on my <a href="/about/cv">CV</a> or <a href="https://www.linkedin.com/in/temich/">LinkedIn</a>.</em></p>
+
+        </div>
+
+        <div class="main__quote">
+            <blockquote>
+                <p>With over 15&nbsp;years of&nbsp;experience in&nbsp;coding, I&nbsp;have now refined my&nbsp;skillset and concentrate on&nbsp;improving standards, quality, and communication within teams.</p>
+                <p>While I&nbsp;still get hands-on to&nbsp;code and develop websites and web applications, my&nbsp;focus is&nbsp;now consulting on&nbsp;technical management and helping teams collaborate and work better together to&nbsp;streamline workflow and improve delivery.</p>
+            </blockquote>
+        </div>
+
+        <div class="services">
+            <div class="card">
+                <h2>Services</h2>
+                <p>Technical direction, front-end development, consultation.</p>
+            </div>
+            <div class="card">
+                <h2>Technologies</h2>
+                <p>JS, TS, ES6+, React, Redux, Angular,<br> HTML, CSS.</p>
+            </div>
+            <div class="card">
+                <h2>Workflow</h2>
+                <p>Git, automation, testing, continuous integration and delivery.</p>
+            </div>
+            <div class="card">
+                <h2>Availability</h2>
+                <p>Not currently available but always <a class="nobr" href="#">up for a chat</a>.</p>
+            </div>
+        </div>
+
+        <div class="card card-text card-black get-in-touch">
+            <h2 class="acenter">Want to work together?</h2>
+            <p class="acenter">I&rsquo;m always up&nbsp;for new challenges to&nbsp;collaborate with people and companies to&nbsp;realize their products. Don&rsquo;t be&nbsp;a&nbsp;stranger, say hello!</p>
+            <p class="acenter"><a>Get in touch!</a></p>
         </div>
 
     </div>
@@ -188,30 +166,34 @@
 
 <footer class="footer">
     <div class="footer__copyright">
-        &copy;&nbsp;1984–2019 Artem&nbsp;Koziar
+        &copy;&nbsp;1984–2021 Artem&nbsp;Koziar
     </div>
     <div class="hitua">
         <!-- hit.ua -->
         <a href='http://hit.ua/?x=85927' target='_blank'>
             <script language="javascript" type="text/javascript"><!--
-            Cd=document;Cr="&"+Math.random();Cp="&s=1";
-            Cd.cookie="b=b";if(Cd.cookie)Cp+="&c=1";
-            Cp+="&t="+(new Date()).getTimezoneOffset();
-            if(self!=top)Cp+="&f=1";
+            Cd = document;
+            Cr = "&" + Math.random();
+            Cp = "&s=1";
+            Cd.cookie = "b=b";
+            if (Cd.cookie) Cp += "&c=1";
+            Cp += "&t=" + (new Date()).getTimezoneOffset();
+            if (self != top) Cp += "&f=1";
             //--></script>
             <script language="javascript1.1" type="text/javascript"><!--
-            if(navigator.javaEnabled())Cp+="&j=1";
+            if (navigator.javaEnabled()) Cp += "&j=1";
             //--></script>
             <script language="javascript1.2" type="text/javascript"><!--
-            if(typeof(screen)!='undefined')Cp+="&w="+screen.width+"&h="+
-                screen.height+"&d="+(screen.colorDepth?screen.colorDepth:screen.pixelDepth);
+            if (typeof (screen) != 'undefined') Cp += "&w=" + screen.width + "&h=" +
+              screen.height + "&d=" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth);
             //--></script>
             <script language="javascript" type="text/javascript"><!--
-            Cd.write("<img src='//c.hit.ua/hit?i=85927&g=0&x=4"+Cp+Cr+
-                "&r="+escape(Cd.referrer)+"&u="+escape(window.location.href)+
-                "' border='0' width='88' height='15' "+
-                "alt='hit.ua: посетителей за сегодня' title='hit.ua: посетителей за сегодня'/>");
-            //--></script></a>
+            Cd.write("<img src='//c.hit.ua/hit?i=85927&g=0&x=4" + Cp + Cr +
+              "&r=" + escape(Cd.referrer) + "&u=" + escape(window.location.href) +
+              "' border='0' width='88' height='15' " +
+              "alt='hit.ua: посетителей за сегодня' title='hit.ua: посетителей за сегодня'/>");
+            //--></script>
+        </a>
         <!-- / hit.ua -->
     </div>
 </footer>
@@ -232,11 +214,15 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59357319-1"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-59357319-1');
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-59357319-1');
 </script>
 
 </body>
