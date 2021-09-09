@@ -563,6 +563,7 @@ Loader
     background-color: #fff;
     box-shadow: none;
     text-shadow: none;
+    font-size: 90%;
   }
 
   pre, blockquote, .card {
