@@ -4,43 +4,69 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal portfolio website for Artem Koziar, a Principal Software Engineer and Front-end development consultant. The site is a static HTML/CSS/JS website hosted on Firebase Hosting, showcasing professional experience, portfolio apps, CV/resume, and contact information.
+This is a personal portfolio website for Artem Koziar, a Principal Software Engineer and Front-end development consultant. The site is built with **Next.js 14** using **Static Site Generation (SSG)** and **Markdown-based content management** for AI-friendly maintenance.
 
 **Primary URL:** https://temich.in.ua/
+**Version:** 3.0.0 (Migrated from static HTML to Next.js SSG)
 
 ## Architecture
 
-### Static Site Structure
-- **No build process required** - Pure HTML/CSS/JS files served directly from the `public/` directory
-- **Firebase Hosting** - Simple static file hosting with `firebase.json` configuration
-- **Progressive Web App** - Includes manifest.json and service worker for offline functionality
-- **Multi-lingual support** - English (default), Ukrainian (`/ua`), and Russian (`/ru`) versions
+### Next.js SSG Structure
+- **Build process:** Next.js builds static HTML from React components and Markdown content
+- **GitHub Pages** - Static HTML hosting with automated deployment via GitHub Actions
+- **Progressive Web App** - Service worker preserved from legacy site
+- **Markdown Content** - All page content managed via Markdown files (AI-friendly!)
+- **SOLID Principles** - TypeScript services and React components follow SOLID patterns
+- **Multi-lingual support** - Structure preserved for English (default), Ukrainian (`/ua`), and Russian (`/ru`) versions
 
 ### Directory Structure
 ```
-public/
-├── index.html           # Main landing page (EN)
-├── 404.html            # Custom error page
-├── manifest.json       # PWA manifest
-├── i/                  # Assets (images, CSS, JS, icons, fonts)
-│   ├── app.css         # Main stylesheet
-│   ├── app.js          # Main JavaScript (age calculations, UI interactions)
-│   ├── service-worker.js
-│   ├── service-worker-registration.js
-│   └── melolontha/     # Optional animation component (beetle animation)
-├── about/              # About page and CV/resume
-│   ├── cv/             # Detailed CV page
-│   └── resume/         # Resume page
-├── apps/               # Portfolio applications
-│   ├── devchallenge12/ # Angular apps from Dev Challenge 12
-│   ├── pace/           # Angular app with service worker
-│   ├── memory/         # Memory game
-│   └── one-shot-sea-battle/  # Sea battle grid web component
-├── contacts/           # Contact information
-├── family/             # Family page
-├── log/                # Blog/log page
-├── ua/                 # Ukrainian version
-└── ru/                 # Russian version
+├── content/                    # 📝 Markdown content (AI edits here!)
+│   ├── pages/                  # Page content (home.md, about.md, contacts.md)
+│   ├── sections/               # Reusable content blocks
+│   └── config/
+│       └── site.json           # Site-wide configuration
+│
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── layout.tsx          # Root layout (header/footer)
+│   │   ├── page.tsx            # Home page
+│   │   ├── about/page.tsx      # About page
+│   │   └── contacts/page.tsx   # Contacts page
+│   │
+│   ├── components/             # React components
+│   │   ├── DynamicAge.tsx      # Client-side age calculation
+│   │   ├── DynamicExperience.tsx
+│   │   └── Layout/
+│   │       ├── Header.tsx      # Site header with navigation
+│   │       └── Footer.tsx      # Site footer
+│   │
+│   ├── lib/                    # Services (SOLID principles)
+│   │   ├── DateCalculator.ts   # Age/date calculations service
+│   │   └── ContentLoader.ts    # Markdown content loading service
+│   │
+│   └── styles/
+│       └── globals.css         # Global styles (from old app.css)
+│
+├── public/                     # Static assets
+│   ├── i/                      # Images, fonts, icons (preserved)
+│   │   ├── avatars/
+│   │   ├── fonts/
+│   │   ├── icons/
+│   │   ├── technologies/
+│   │   └── messengers/
+│   ├── apps/                   # Legacy Angular apps (preserved as-is)
+│   │   ├── devchallenge12/
+│   │   ├── pace/
+│   │   ├── memory/
+│   │   └── one-shot-sea-battle/
+│   └── manifest.json           # PWA manifest
+│
+├── out/                        # 🎯 Built static HTML (deploy this)
+│
+├── next.config.js              # Next.js configuration
+├── tsconfig.json               # TypeScript configuration
+└── package.json
 ```
 
 ### Key Technical Components
@@ -66,21 +92,31 @@ public/
 
 ### Local Development
 ```bash
-# Start local development server (Python 2.x)
-npm start
-# or
-yarn start
-# Serves on http://localhost:8000
+# Start Next.js development server with hot reload
+yarn dev
+# Opens http://localhost:3000
 ```
 
-### Deployment
+### Building & Deployment
 ```bash
-# Deploy to Firebase Hosting
-npm run deploy
-# or
+# Build static HTML for production
+yarn build
+# Output: ./out/ directory
+
+# Deploy to GitHub Pages
 yarn deploy
-# or
-yarn fire
+# Builds and pushes to gh-pages branch
+
+# Legacy commands (for old Firebase deployment)
+yarn legacy:start   # Python dev server for old site
+yarn legacy:deploy  # Firebase deployment
+```
+
+### Content Editing (AI-Friendly!)
+```bash
+# All content is in Markdown files
+# Edit: content/pages/*.md
+# Changes appear instantly during yarn dev
 ```
 
 ## Firebase Configuration
@@ -104,13 +140,49 @@ The site is hosted on Firebase with the following configuration (`firebase.json`
 - **Hit.ua** - Ukrainian traffic analytics
 - **Font Loading** - Custom web fonts (WOFF2, WOFF, TTF)
 
-## Content Management
+## Content Management (AI-Friendly!)
 
-### Updating Professional Information
-- **Experience years** - JavaScript calculation in `public/i/app.js:22` (birthday: 1984-09-26)
-- **Current job duration** - Calculation in `public/i/app.js:11` (start date: March 2023)
-- **Companies logos** - Located in `public/about/i/` (Grammarly, Ciklum, Luxoft, Innovecs)
-- **Technology icons** - Located in `public/i/technologies/` (JS, HTML, CSS, TS, React, Angular)
+### Markdown-Based Content System
+
+All page content is now managed via **Markdown files** in `/content/pages/`. This makes it extremely easy for AI to edit and maintain content.
+
+**Example: Editing the home page**
+```markdown
+<!-- content/pages/home.md -->
+---
+title: "Artem Koziar — Principal Software Engineer"
+description: "Front-end consultant and coach"
+---
+
+## Professional Overview
+
+I have over 15 years of professional experience...
+```
+
+### Updating Personal Information
+
+**Site Configuration** (`content/config/site.json`):
+```json
+{
+  "birthday": "1984-09-26",
+  "experienceStartDate": "2023-03-01",
+  "contacts": {
+    "telegram": "sharkich",
+    "email": "koziar.artem@gmail.com"
+  }
+}
+```
+
+**Dynamic Components:**
+- Age is calculated client-side using `DateCalculator` service
+- Experience duration calculated from start date
+- Values pulled from `site.json` configuration
+
+### Asset Management
+- **Company logos** - `public/about/i/` (Grammarly, Ciklum, Luxoft, Innovecs)
+- **Technology icons** - `public/i/technologies/` (JS, HTML, CSS, TS, React, Angular)
+- **Profile photos** - `public/i/avatars/`
+- **Messenger icons** - `public/i/messengers/`
 
 ### Contact Information
 Multiple contact methods integrated:

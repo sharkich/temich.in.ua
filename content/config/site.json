@@ -1,0 +1,22 @@
+{
+  "name": "Artem Koziar",
+  "title": "Principal Software Engineer, Front-end development consultant, Coach",
+  "description": "Freelance development and consultancy — helping teams collaborate and work better together, streamline workflow, and deliver quality websites and applications",
+  "url": "https://temich.in.ua",
+  "birthday": "1984-09-26",
+  "experienceStartDate": "2023-03-01",
+  "contacts": {
+    "telegram": "sharkich",
+    "messenger": "temich.in.ua",
+    "viber": "+380677317648",
+    "email": "koziar.artem@gmail.com"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/temich/",
+    "github": "https://github.com/sharkich"
+  },
+  "analytics": {
+    "googleAnalytics": "UA-59357319-1",
+    "hitua": "85927"
+  }
+}
